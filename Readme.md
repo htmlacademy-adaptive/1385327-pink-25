@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Oksana Morzhova](https://up.htmlacademy.ru/adaptive/25/user/1385327).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Боровик](https://htmlacademy.ru/profile/mouxez).
 
 ---
 
