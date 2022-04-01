@@ -1,12 +1,106 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page-body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <header class="main-header">
+    <!--
+      todo maun-header
+    -->
+      <div class="main-header__wrapper"><!--!wrapper-->
+
+        <nav class="header-navigation">
+        <!--
+          todo header-navigation
+        -->
+          <div class="header-navigation__wrapper"><!--!wrapper-->
+
+            <a href="#" class="header-navigation__logo logo" aria-label="Фотосервис PINK"><!--?nav-logo-->
+              <img src="img/pink.svg" width="74px" height="23px" alt="Pink" style="background: #000000"><!--! Добавлен стиль, а то не видно) -->
+            </a>
+
+            <button class="header-navigation__toggle" type="button"><!--?nav-toggle-->
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+
+            <ul class="header-navigation__menu"><!--?nav-menu-->
+              <li class="header-navigation__item header-navigation__item--current">
+                <a href="#" class="header-navigation__link">Главная</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="catalog.html" class="header-navigation__link">Фотографии</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="form.html" class="header-navigation__link">Конкурс</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive" class="header-navigation__link">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <h1 class="visually-hidden">Фотосервис Pink</h1>
+
+        <div class="header-intro">
+        <!--
+          todo header-intro
+        -->
+          <div class="header-intro__wrapper"><!--!wrapper-->
+            <p class="header-intro__slogan">Взгляните на жизнь иначе!</p><!--? intro-slogan-->
+            <a class="header-intro__button" href="https://www.apple.com">Скачать приложение</a><!--? intro-button-->
+            <ul class="header-intro__webstore"><!--? intro-webstore-->
+              <li class="header-intro__item">
+                <a href="https://www.apple.com" class="header-intro__link"><img src=""
+                  alt="iOS"></a>
+              </li>
+              <li class="header-intro__item">
+                <a href="https://www.play.google.com" class="header-intro__link"><img src=""
+                  alt="Android"></a>
+              </li>
+              <li class="header-intro__item">
+                <a href="https://www.microsoft.com" class="header-intro__link"><img src=""
+                  alt="Windows"></a>
+              </li>
+            </ul>
+            <p class="header-intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main"></main>
+
+    <footer class="page-footer">
+      <!--
+        todo page-footer
+      -->
+      <div class="page-footer__wrapper"><!--!wrapper-->
+        <a class="footer-logo logo" aria-label="Логотип сайта Pink"></a>
+
+        <ul class="social__items">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="VKontakte"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Telegram"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Youtube"></a>
+          </li>
+        </ul>
+
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+            <img src="img/htmlacademy.svg" width="27px" height="34px" alt="Pink">
+          </a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
