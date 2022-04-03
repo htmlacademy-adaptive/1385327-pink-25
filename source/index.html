@@ -59,7 +59,7 @@
 
               <ul class="intro-content__webstores">
                 <li class="intro-content__item">
-                  <a class="intro-contento__link" href="https://www.apple.com"><img src="img/apple-logo.svg" width="47"
+                  <a class="intro-content__link" href="https://www.apple.com"><img src="img/apple-logo.svg" width="47"
                       height="56" alt="iOS"></a>
                 </li>
                 <li class="intro-content__item">
@@ -136,12 +136,12 @@
     <section class="reviews">
       <!--                                                                                       todo reviews-->
 
-      <div class="reviews__wrapper slide-dot slide-arrow">
+      <div class="reviews__wrapper slider-dot slider-arrow">
         <!--!wrapper-->
         <h2 class="visually-hidden">Отзывы о приложении</h2>
 
-        <ul class="reviews__items slide-dot__list">
-          <li class="reviews__item slide-dot__item">
+        <ul class="reviews__items slider-dot__list">
+          <li class="reviews__item slider-dot__item">
             <blockquote class="reviews__text">
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я познакомился со своей будущей женой в
@@ -150,7 +150,7 @@
               <p class="reviews__autor-info">25 лет, водитель трамвая</p>
             </blockquote>
           </li>
-          <li class="reviews__item slide-dot__item">
+          <li class="reviews__item slide-dotr__item">
             <!--! Надо ещё отвыв-->
             <blockquote class="reviews__text">
               <p>«Здесь мог бы быть ваш отзыв»</p>
@@ -158,7 +158,7 @@
               <p class="reviews__autor-info">ХХ лет, кто-то</p>
             </blockquote>
           </li>
-          <li class="reviews__item slide-dot__item">
+          <li class="reviews__item slide-dotr__item">
             <!--! Надо ещё отвыв-->
             <blockquote class="reviews__text">
               <p>«Здесь мог бы быть ваш отзыв»</p>
@@ -167,45 +167,44 @@
             </blockquote>
           </li>
         </ul>
-      </div>
+        <div class="reviews__toggles slider-dot__toggles">
+          <!--todo dot КНОПКИ-->
+          <button class="slider-dot__toggle slider-dot__toggle--current" type="button">.1</button>
+          <button class="slider-dot__toggle" type="button">.2</button>
+          <button class="slider-dot__toggle" type="button">.3</button>
+        </div>
 
-      <div class="reviews__toggles slide-dot__toggles">
-        <!--todo dot КНОПКИ-->
-        <button class="slide-dot__toggle slide-dot__toggle--current" type="button">.1</button>
-        <button class="slide-dot__toggle" type="button">.2</button>
-        <button class="slide-dot__toggle" type="button">.3</button>
-      </div>
-
-      <div class="reviews__toggles slide-arrow__toggles">
-        <!--todo arrow КНОПКИ-->
-        <button class="slide-arrow__toggle  slide-arrow__toggle--prev" type="button"
-          title="Предыдущий отзыв">&lt;</button>
-        <button class="slide-arrow__toggle  slide-arrow__toggle--next" type="button"
-          title="Следующий отзыв">&gt;</button>
+        <div class="reviews__toggles slider-arrow__toggles">
+          <!--todo arrow КНОПКИ-->
+          <button class="slider-arrow__toggle  slider-arrow__toggle--prev" type="button"
+            title="Предыдущий отзыв">&lt;</button>
+          <button class="slider-arrow__toggle  slider-arrow__toggle--next" type="button"
+            title="Следующий отзыв">&gt;</button>
+        </div>
       </div>
     </section>
 
     <section class="price">
       <!--                                                                                              todo price-->
 
-      <div class="prise__wrapper">
+      <div class="price__wrapper slider-dot">
         <!--!wrapper-->
         <h2 class="visually-hidden">Стоимость приложения</h2>
 
-        <table class="price__table table-price">
+        <table class="price__table table-price slider-dot__list">
           <thead>
             <tr>
               <th class="table-price__header">
               </th>
-              <th class="table-price__header">
+              <th class="table-price__header slider-dot__item">
                 <span class="table-price__product-type">База</span>
                 <span class="table-price__product-price">1,99 USD</span>
               </th>
-              <th class="table-price__header table-price__header--hit">
+              <th class="table-price__header slider-dot__item table-price__header--hit">
                 <span class="table-price__product-type">Стандарт</span>
                 <span class="table-price__product-price">3,99 USD</span>
               </th>
-              <th class="table-price__header">
+              <th class="table-price__header slider-dot__item">
                 <span class="table-price__product-type">Анлим</span>
                 <span class="table-price__product-price">9,99 USD</span>
               </th>
@@ -290,10 +289,10 @@
           </tbody>
         </table>
 
-        <div class="prise__toggles slide-dot__toggles">
-          <button class="slide-dot__toggle" type="button">.1</button>
-          <button class="slide-dot__toggle slide-dot__toggle--current" type="button">.2</button>
-          <button class="slide-dot__toggle" type="button">.3</button>
+        <div class="price__toggles slider-dot__toggles">
+          <button class="slider-dot__toggle" type="button">.1</button>
+          <button class="slider-dot__toggle slider-dot__toggle--current" type="button">.2</button>
+          <button class="slider-dot__toggle" type="button">.3</button>
         </div>
       </div>
     </section>
