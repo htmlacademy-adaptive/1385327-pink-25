@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-// Начните писать стили здесь
-@import ".blocks/page.scss";
-=======
 // global
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 // block
 @import "blocks/page.scss";
->>>>>>> b3d8bc906fdcbfb7d1a7b491504d4c3deff5e02e
-@import "blocks/page-body.scss";
 // header
 @import "blocks/main-header.scss";
 @import "blocks/header-navigation.scss";
@@ -34,15 +28,20 @@
 @import "blocks/footer-social.scss";
 @import "blocks/social.scss";
 @import "blocks/footer-copyright.scss";
+// slider
+@import "./blocks/slider-dot.scss";
+@import "./blocks/slider-arrow.scss";
 // page-innor
-@import "blocks/page-innor.scss";
+@import "blocks/page-inner.scss";
 // gallery
 @import "blocks/catalog-information.scss";
 @import "blocks/gallery.scss";
 @import "blocks/photo.scss";
 @import "blocks/gallery-information.scss";
 @import "blocks/photo-editor.scss";
-// form
 @import "blocks/form-photo.scss";
+// form
 @import "blocks/form-information.scss";
 @import "blocks/form-feedback.scss";
+// modal-form
+@import "./blocks/modal-form.scss"

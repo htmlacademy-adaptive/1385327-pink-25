@@ -1,0 +1,24 @@
+// .modal-form {}
+// .modal-form--success {}
+// .modal-form--error {}
+// .modal-form__top {}
+
+.modal-form__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-form__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-theme;
+}
+
+.modal-form__bottom {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(42, 171, 109);
+}

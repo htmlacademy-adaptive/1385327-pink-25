@@ -1,3 +1,39 @@
-.reviews {
-  background-color: hsl(311, 66%, 66%);
+// .reviews {}
+
+// .reviews__wpapper{}
+
+.reviews__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+.reviews__item {
+  &:nth-of-type(2) {
+    display: none;
+  }
+
+  &:nth-of-type(3) {
+    display: none;
+  }
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $main-theme;
+}
+
+.reviews__autor-name {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.reviews__autor-info {
+  display: none;
+  color: $main-theme;
+}
+
+// .reviews__toggles{}

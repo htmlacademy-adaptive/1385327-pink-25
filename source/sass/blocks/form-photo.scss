@@ -1,3 +1,26 @@
-.form-photo {
-  background-color: hsl(311, 66%, 66%);
+// .form-photo {}
+// .form-photo__wrapper{}
+// .form-photo__image{}
+// .form-photo__filtrs{}
+// .form-photo__filtr{}
+// .form-photo__filter-crop{}
+// .form-photo__filter-fill{}
+// .form-photo__filter-contrast{}
+// .form-photo__button-editor{}
+// .form-photo__button{}
+
+.form-photo__button-submit {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: $accent;
+}
+
+.form-photo__button-reset {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgba(40, 54, 69, 0.1);
 }

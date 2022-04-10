@@ -1,10 +1,24 @@
 .intro-content {
   color: rgb(255, 255, 255);
 }
+// .intro-content__wrapper{}
 
 .intro-content__button {
   font-size: 18px;
   line-height: 18px;
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+.intro-content__webstores {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// .intro-content__item{}
+// .intro-content__link{}
+
+.intro-content__description {
+  text-align: center;
 }

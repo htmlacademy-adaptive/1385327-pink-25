@@ -1,3 +1,21 @@
 .effect {
-  background-color: hsl(121, 66%, 66%);
+  display: none;
+}
+
+// .effect__wrapper{}
+
+// .effect__icon{}
+
+.effect__taitl {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.effect__text {
+  color: $main-theme;
+}
+
+.effect__link {
+  color: $accent; // #D22856
 }

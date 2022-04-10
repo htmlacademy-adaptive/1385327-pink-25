@@ -1,3 +1,28 @@
-.contacts {
-  background-color: hsl(352, 66%, 66%);
+// .contacts {}
+// .contacts__wrapper{}
+// .contacts__list {}
+// .contacts__item {}
+// .contacts__item--phone {}
+// .contacts__item--email {}
+// .contacts__item--address {}
+
+.contacts__list-term {
+  font-size: 18px;
+  line-height: 24.51px;
+  font-weight: 700;
+  align-items: center;
+  color: $main-theme;
 }
+
+// .contacts__list-description {}
+
+.contacts__list-link {
+  font-size: 24px;
+  line-height: 32.68px;
+  font-weight: 300;
+  align-items: center;
+  color: $accent;
+  text-decoration: none;
+}
+
+// .contacts__map {}

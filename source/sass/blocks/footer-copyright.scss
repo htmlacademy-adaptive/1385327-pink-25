@@ -1,3 +1,9 @@
-.footer-copyright {
-  background-color: hsl(311, 66%, 66%);
+// .footer-copyright {}
+
+.footer-copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $main-theme;
 }
+
+//.footer-copyright__link {}
