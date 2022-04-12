@@ -1,0 +1,42 @@
+.table-price {
+  border-collapse: collapse;
+}
+// .table-price__wrapper{}
+
+.table-price__header {
+  background-color: $main-theme;
+  color: rgb(255, 255, 255);
+  width: 276px;
+  height: 94px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+// .table-price__header--hit {}
+
+.table-price__product-type {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.table-price__product-price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  align-items: center;
+}
+
+.table-price__cell {
+  color: $main-theme;
+  font-size: 14px;
+  line-height: 30px;
+  width: 276px;
+  height: 59px;
+  border: 2px solid rgb(229, 229, 229);
+}
+
+// .table-price__feature{}
+// .table-price__feature-value{}
+// .table-price__feature-value--true{}
+// .table-price__feature-value--false{}

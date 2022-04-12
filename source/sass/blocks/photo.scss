@@ -1,0 +1,42 @@
+// .photo {}
+// .photo--panorama {}
+// .photo--gallery {}
+// .photo__link {}
+// .photo__name {}
+
+.photo__info {
+  background-color: $background;
+}
+
+// .photo__info--panorama {}
+
+.photo__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-theme;
+}
+
+// .photo__autor {}
+
+.photo__autor-name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $main-theme;
+}
+
+.photo__autor-date {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $main-theme;
+}
+
+// .photo__statistic {}
+// .photo__statistic-button {}
+
+.photo__statistic-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: $item-accent;
+}

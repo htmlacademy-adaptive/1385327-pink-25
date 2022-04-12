@@ -1,0 +1,21 @@
+.effect {
+  display: none;
+}
+
+// .effect__wrapper{}
+
+// .effect__icon{}
+
+.effect__taitl {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.effect__text {
+  color: $main-theme;
+}
+
+.effect__link {
+  color: $item-accent; // #D22856
+}

@@ -1,0 +1,30 @@
+.advantages {
+  background-color: $background;
+}
+
+// .advantages__wrapper{}
+
+.advantages__items {
+  margin: o;
+  padding: 0;
+  list-style: none;
+}
+
+// .advantages__item{}
+// .advantages__item--mood{}
+// .advantages__item--world{}
+// .advantages__item--friends{}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $main-theme;
+}
