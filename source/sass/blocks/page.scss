@@ -1,8 +1,22 @@
 .page {
   height: 100%;
+  min-width: $mobile-width;
   font-size: 14px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 24px;
+  background-color: #ffe4c4;
 }
 
-// .page__body {}
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+  width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
