@@ -3,6 +3,11 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .header-navigation--opened {
@@ -15,10 +20,18 @@
 
 .header-navigation__logo {
   height: 63px;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
 }
 
 .header-navigation--opened .header-navigation__logo {
   height: 69px;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
 }
 
 .header-navigation__logo img {
@@ -41,8 +54,6 @@
   }
 }
 
-// .header-navigation__menu {
-// }
 .header-navigation--closed .header-navigation__toggle {
   position: absolute;
   top: 21px;
@@ -85,10 +96,6 @@
   }
 }
 
-.header-navigation--closed .header-navigation__items {
-  display: none;
-}
-
 .header-navigation__items {
   background-color: rgb(40, 54, 69);
   padding: 0;
@@ -100,19 +107,28 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    background: none;
+    width: 793px;
+    align-items: center;
+    padding-right: 130px;
   }
 }
 
-.heder-navigation__item {
+.header-navigation__item {
   display: block;
-  height: 63px;
+  width: 100%;
+  height: 62px;
   background-color: $main-theme;
+  border-top: 1px solid #000000;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $desktop-width) {
     background: none;
     box-shadow: none;
+    border: none;
+    height: 110px;
+    width: auto;
   }
 }
 
@@ -123,10 +139,36 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-top: 15px;
 
   @media (min-width: $desktop-width) {
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
+    padding-left: 79px;
+    padding-top: 48px;
+    text-align: right;
+    display: inline-block;
   }
+}
+
+@media (max-width: $desktop-width-only) {
+  .header-navigation--closed .header-navigation__item {
+    display: none;
+  }
+}
+
+.header-navigation--nojs .header-navigation__toggle {
+  display: none;
+}
+
+.header-navigation--nojs .header-navigation__items {
+  position: static;
+  min-height: 0;
+}
+
+.header-navigation--nojs .site-list__item {
+  display: block;
 }

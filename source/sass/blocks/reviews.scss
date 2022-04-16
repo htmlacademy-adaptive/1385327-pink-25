@@ -33,7 +33,11 @@
 
 .reviews__autor-info {
   display: none;
-  color: $main-theme;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    color: $main-theme;
+  }
 }
 
 // .reviews__toggles{}

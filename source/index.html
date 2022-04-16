@@ -12,36 +12,32 @@
 
   <header class="main-header">
 
-      <nav class="header-navigation header-navigation--closed">
+      <nav class="header-navigation header-navigation--closed header-navigation--nojs">
 
         <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
           <img src="img/pink.svg" width="74" height="23" alt="Pink">
         </a>
 
-        <div class="header-navigation__menu">
+        <button class="header-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-          <button class="header-navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-
-          <ul class="header-navigation__items">
-            <li class="header-navigation__item header-navigation__item--current">
-              <a class="header-navigation__link" href="#">Главная</a>
-            </li>
-            <li class="header-navigation__item">
-              <a class="header-navigation__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="header-navigation__item">
-              <a class="header-navigation__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="header-navigation__item">
-              <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-
-        </div>
+        <ul class="header-navigation__items">
+          <li class="header-navigation__item header-navigation__item--current">
+            <a class="header-navigation__link" href="#">Главная</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
-<!--
+
       <div class="header-intro">
         <div class="header-intro__wrapper">
 
@@ -72,9 +68,9 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
   </header>
-<!--
+
   <main class="page-main">
 
     <h1 class="visually-hidden">Фотосервис Pink</h1>
@@ -290,62 +286,51 @@
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
 
-        <div class="contacts__lists">
-          <dl class="contacts__item contacts__item--phone">
-            <dt class="contacts__list-term">Звоните:</dt>
-            <dd class="contacts__list-description">
-              <a class="contacts__list-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            </dd>
-          </dl>
-
-          <dl class="contacts__item contacts__item--email">
-            <dt class="contacts__list-term">Пишите:</dt>
-            <dd class="contacts__list-description">
-              <a class="contacts__list-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </dd>
-          </dl>
-
-          <dl class="contacts__item contacts__item--address">
-            <dt class="contacts__list-term">Приезжайте в гости:</dt>
-            <dd class="contacts__list-description">
-              <a class="contacts__list-link">ул. Большая Конюшенная, 19/8</a>
-            </dd>
-          </dl>
-        </div>
+        <ul class="contacts__items">
+          <li class="contacts__item contacts__item--phone">
+            <p class="contacts__list">Звоните:</p>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contacts__item contacts__item--email">
+            <p class="contacts__list">Пишите:</p>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contacts__item contacts__item--location">
+            <p class="contacts__list">Приезжайте в гости:</p>
+            <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
 
         <div class="contacts__map">
         </div>
       </div>
     </section>
   </main>
--->
-  <!--
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <a class="footer-logo logo"></a>
 
-      <div class="footer-social social">
-        <ul class="social__items">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/" title="VKontakte">VKontakte</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://telegram.org/" title="Telegram">Telegram</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/" title="Youtube">Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <span class="footer-copyright__text">Разработано</span>
-        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Pink">
-        </a>
-      </div>
+  <footer class="main-footer">
+    <a class="footer-logo logo"></a>
+    <ul class="footer-social">
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://vk.com/" title="VKontakte">VKontakte</a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://telegram.org/" title="Telegram">Telegram</a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://www.youtube.com/" title="Youtube">Youtube</a>
+      </li>
+    </ul>
+
+    <div class="footer-copyright">
+      <span class="footer-copyright__text">Разработано</span>
+      <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Pink">
+      </a>
     </div>
   </footer>
--->
+
+<script src="./js/script.js"></script>
+
 </body>
 
 </html>

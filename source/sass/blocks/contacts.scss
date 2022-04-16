@@ -1,28 +1,45 @@
 // .contacts {}
 // .contacts__wrapper{}
-// .contacts__list {}
-// .contacts__item {}
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.contacts__item {
+  list-style: none;
+}
 // .contacts__item--phone {}
 // .contacts__item--email {}
-// .contacts__item--address {}
+.contacts__item--location {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
 
-.contacts__list-term {
+.contacts__list {
   font-size: 18px;
   line-height: 24.51px;
   font-weight: 700;
-  align-items: center;
   color: $main-theme;
+  text-align: center;
 }
 
-// .contacts__list-description {}
-
-.contacts__list-link {
+.contacts__link {
   font-size: 24px;
   line-height: 32.68px;
   font-weight: 300;
-  align-items: center;
   color: $item-accent;
   text-decoration: none;
+  text-align: center;
 }
 
 // .contacts__map {}
