@@ -1,5 +1,7 @@
 .effect {
-  display: none;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 // .effect__wrapper{}

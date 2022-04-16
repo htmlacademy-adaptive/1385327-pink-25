@@ -1,1 +1,12 @@
-// .footer-sotial {}
+.footer-social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-social__item {
+  list-style: none;
+}
+// .social__link {}

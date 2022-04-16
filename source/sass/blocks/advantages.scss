@@ -2,12 +2,20 @@
   background-color: $background;
 }
 
-// .advantages__wrapper{}
+.advantages__wrapper {
+  display: grid;
+}
 
 .advantages__items {
   margin: o;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 // .advantages__item{}
