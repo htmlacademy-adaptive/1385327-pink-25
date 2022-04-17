@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -10,25 +11,18 @@
 <body class="page__body">
 
   <header class="main-header">
-    <!--                                                                                        todo maun-header-->
-    <div class="main-header__wrapper">
-      <!--!wrapper-->
-      <nav class="header-navigation">
-        <!--                                                                                    todo header-navigation-->
-        <div class="header-navigation__wrapper">
-          <!--!wrapper-->
+
+      <nav class="header-navigation header-navigation--closed header-navigation--nojs">
+
           <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
-            <!--? nav-logo-->
             <img src="img/pink.svg" width="74" height="23" alt="Pink">
           </a>
 
           <button class="header-navigation__toggle" type="button">
-            <!--? nav-toggle-->
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
           <ul class="header-navigation__items">
-            <!--? nav-items-->
             <li class="header-navigation__item ">
               <a class="header-navigation__link" href="index.html">Главная</a>
             </li>
@@ -42,23 +36,16 @@
               <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
-
-      <div class="header-intro">
-        <!--                                                                                    todo header-intro-->
+      <div class="header-intro header-intro--inner">
         <div class="header-intro__wrapper">
-          <!--!wrapper-->
-
           <p class="intro-slogan">Фотографии пользователей</p>
-
         </div>
       </div>
-    </div>
+
   </header>
 
   <main class="page-inner">
-    <!--                                                                                    todo page-inner-->
     <h1 class="visually-hidden">Каталог фотографий пользователей</h1>
 
     <div class="catalog-information information">
@@ -70,8 +57,11 @@
       <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
 
       <figure class="photo photo--panorama">
-        <!--                                                                                todo photo-->
-        <img class="photo__link" src="img/panorama-mobile.png" width="320" height="137" alt="panorama-mobile">
+        <picture>
+          <source media="(min-width: 1200px)" src="img/catalog/panorama-desktop.png">
+          <source media="(min-width: 660px)" src="img/catalog/panorama-tablet.png">
+          <img class="photo__link" src="img/catalog/panorama-mobile.png" alt="panorama-mobile">
+        </picture>
         <span class="photo__name">Панорама дня</span>
 
         <figcaption class="photo__info photo__info--panorama">
@@ -85,7 +75,7 @@
 
           <div class="photo__statistic">
             <button class="photo__statistic-button" type="button">
-              <img src="img/heart.svg" width="13" height="12" alt="heart">
+              <img src="img/catalog/heart.svg" width="13" height="12" alt="heart">
             </button>
             <span class="photo__statistic-text">Нравится: 215</span>
           </div>
@@ -96,7 +86,7 @@
         <!--!wrapper-->
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/photo-1-mobile.png" width="280" height="180" alt="photo-1-mobile">
+          <img class="photo__link" src="img/catalog/photo-1-mobile.png" width="280" height="180" alt="photo-1-mobile">
           <figcaption class="photo__info">
             <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo__author">
@@ -113,7 +103,7 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/photo-2-mobile.png" width="280" height="180" alt="photo-2-mobile">
+          <img class="photo__link" src="img/catalog/photo-2-mobile.png" width="280" height="180" alt="photo-2-mobile">
           <figcaption class="photo__info">
             <p class="photo__text">Соседи будут рады!</p>
             <div class="photo__author">
@@ -121,7 +111,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(12 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/heart.svg" width="13" height="12"
+              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart"></button>
               <span class="photo__statistic-text">Нравится: 666</span>
             </div>
@@ -129,7 +119,7 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/photo-3-mobile.png" width="280" height="180" alt="photo-3-mobile">
+          <img class="photo__link" src="img/catalog/photo-3-mobile.png" width="280" height="180" alt="photo-3-mobile">
           <figcaption class="photo__info">
             <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo__author">
@@ -137,7 +127,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(20 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/heart.svg" width="13" height="12"
+              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 215</span>
@@ -146,7 +136,7 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/photo-4-mobile.png" width="280" height="180" alt="photo-4-mobile">
+          <img class="photo__link" src="img/catalog/photo-4-mobile.png" width="280" height="180" alt="photo-4-mobile">
           <figcaption class="photo__info">
             <p class="photo__text">Самая кубанская в мире!</p>
             <div class="photo__author">
@@ -154,7 +144,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(25 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/heart.svg" width="13" height="12"
+              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 4</span>
@@ -163,7 +153,7 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/photo-5-mobile.png" width="280" height="180" alt="photo-5-mobile">
+          <img class="photo__link" src="img/catalog/photo-5-mobile.png" width="280" height="180" alt="photo-5-mobile">
           <figcaption class="photo__info">
             <p class="photo__text">Где снег-то?</p>
             <div class="photo__author">
@@ -171,7 +161,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(40 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/heart.svg" width="13" height="12"
+              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 150</span>
@@ -180,7 +170,7 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/photo-6-mobile.png" width="280" height="180" alt="photo-6-mobile">
+          <img class="photo__link" src="img/catalog/photo-6-mobile.png" width="280" height="180" alt="photo-6-mobile">
           <figcaption class="photo__info">
             <p class="photo__text">Всем GM и взаимные лайки!</p>
             <div class="photo__author">
@@ -188,7 +178,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(45 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/heart.svg" width="13" height="12"
+              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 2560</span>
@@ -209,13 +199,13 @@
       <form class="form-photo" action="https://echo.htmlacademy.ru">
         <div class="form-photo__wrapper">
           <!--!wrapper-->
-          <img class="form-photo__image" src="img/photo-7-mobile.png" alt="photo-7-mobile">
+          <img class="form-photo__image" src="img/catalog/photo-7-mobile.png" alt="photo-7-mobile">
 
           <div class="form-photo__filters">
 
             <div class="form-photo__filter form-photo__filter-crop">
               <button class="form-photo__button-editor">
-                <img src="img/crop.svg" width="44" height="44" alt="crop">
+                <img src="img/catalog/crop.svg" width="44" height="44" alt="crop">
               </button>
               <input id="crop" type="range" name="crop" min="0" max="100" value="90" step="10">
               <label class="visually-hidden" for="crop">Обрезка</label>
@@ -223,7 +213,7 @@
 
             <div class=" form-photo__filter form-photo__filter-fill">
               <button class="form-photo__button-editor">
-                <img src="img/fill.svg" width="48" height="43" alt="fill">
+                <img src="img/catalog/fill.svg" width="48" height="43" alt="fill">
               </button>
               <input id="fill" type="range" name="fill" min="0" max="100" value="20" step="10">
               <label class="visually-hidden" for="fill">Заливка</label>
@@ -231,15 +221,15 @@
 
             <div class="form-photo__filter form-photo__filter-contrast">
               <button class="form-photo__button-editor">
-                <img src="img/contrast.svg" width="32" height="32" alt="contrast">
+                <img src="img/catalog/contrast.svg" width="32" height="32" alt="contrast">
               </button>
               <input id="contrast" type="range" name="contrast" min="0" max="100" value="60" step="10">
               <label class="visually-hidden" for="contrast">Контрастность</label>
             </div>
 
             <div class="form-photo__buttons">
-              <button class="form-photo__button form-photo__button-submit" type="submit">Запостить</button>
-              <button class="form-photo__button form-photo__button-reset" type="reset">Отмена</button>
+              <button class="form-photo__button button form-photo__button--submit" type="submit">Запостить</button>
+              <button class="form-photo__button button form-photo__button--reset" type="reset">Отмена</button>
             </div>
           </div>
         </div>
@@ -248,32 +238,30 @@
   </main>
 
   <footer class="main-footer">
-    <!--                                                                                          todo main-footer-->
-    <div class="main-footer__wrapper">
-      <!--!wrapper-->
-      <a class="footer-logo logo"></a>
+    <a class="footer-logo logo">
+      <img src="img/logotype-blue-tablet.svg" width="140" height="40" alt="Pink">
+    </a>
+    <ul class="footer-social">
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://vk.com/" title="VKontakte"></a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://telegram.org/" title="Telegram"></a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://www.youtube.com/" title="Youtube"></a>
+      </li>
+    </ul>
 
-      <div class="footer-social social">
-        <ul class="social__items">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/" title="VKontakte">VKontakte</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://telegram.org/" title="Telegram">Telegram</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/" title="Youtube">Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <span class="footer-copyright__text">Разработано</span>
-        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Pink">
-        </a>
-      </div>
+    <div class="footer-copyright">
+      <span class="footer-copyright__text">Разработано</span>
+      <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Pink">
+      </a>
     </div>
   </footer>
+
+<script src="./js/script.js"></script>
 
 </body>
 

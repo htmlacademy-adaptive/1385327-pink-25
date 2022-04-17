@@ -1,6 +1,26 @@
-// .photo {}
-// .photo--panorama {}
-// .photo--gallery {}
+.photo {
+  margin: 0;
+}
+
+.photo--panorama {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.photo--gallery {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
 // .photo__link {}
 // .photo__name {}
 

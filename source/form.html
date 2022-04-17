@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -10,25 +11,18 @@
 <body class="page__body">
 
   <header class="main-header">
-    <!--                                                                                        todo maun-header-->
-    <div class="main-header__wrapper">
-      <!--!wrapper-->
-      <nav class="header-navigation">
-        <!--                                                                                    todo header-navigation-->
-        <div class="header-navigation__wrapper">
-          <!--!wrapper-->
+
+      <nav class="header-navigation header-navigation--closed header-navigation--nojs">
+
           <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
-            <!--? nav-logo-->
             <img src="img/pink.svg" width="74" height="23" alt="Pink">
           </a>
 
           <button class="header-navigation__toggle" type="button">
-            <!--? nav-toggle-->
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
           <ul class="header-navigation__items">
-            <!--? nav-items-->
             <li class="header-navigation__item">
               <a class="header-navigation__link" href="index.html">Главная</a>
             </li>
@@ -42,23 +36,16 @@
               <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
 
-      <div class="header-intro">
-        <!--                                                                                    todo header-intro-->
+      <div class="header-intro header-intro--inner">
         <div class="header-intro__wrapper">
-          <!--!wrapper-->
-
           <p class="intro-slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
-
         </div>
       </div>
-    </div>
   </header>
 
   <main class="page-inner">
-    <!--                                                                                    todo page-inner-->
     <h1 class="visually-hidden">Заявка на участие в конкурсе</h1>
 
     <div class="form-information information">
@@ -196,30 +183,26 @@
   </main>
 
   <footer class="main-footer">
-    <!--                                                                                          todo main-footer-->
-    <div class="main-footer__wrapper">
-      <!--!wrapper-->
-      <a class="footer-logo logo"></a>
+    <a class="footer-logo logo">
+      <img src="img/logotype-blue-tablet.svg" width="140" height="40" alt="Pink">
+    </a>
+    <ul class="footer-social">
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://vk.com/" title="VKontakte"></a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://telegram.org/" title="Telegram"></a>
+      </li>
+      <li class="footer-social__item">
+        <a class="footer-social__link" href="https://www.youtube.com/" title="Youtube"></a>
+      </li>
+    </ul>
 
-      <div class="footer-social social">
-        <ul class="social__items">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/" title="VKontakte">VKontakte</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://telegram.org/" title="Telegram">Telegram</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/" title="Youtube">Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <span class="footer-copyright__text">Разработано</span>
-        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Pink">
-        </a>
-      </div>
+    <div class="footer-copyright">
+      <span class="footer-copyright__text">Разработано</span>
+      <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Pink">
+      </a>
     </div>
   </footer>
 
@@ -239,7 +222,7 @@
     </div>
     <button class="modal-form__bottom">OK</button>
   </div>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

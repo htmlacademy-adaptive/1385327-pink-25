@@ -1,3 +1,9 @@
 .photo-editor {
   background-color: $background;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
