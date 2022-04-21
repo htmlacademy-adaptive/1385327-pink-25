@@ -1,2 +1,36 @@
 // .gallery {}
-// .gallery__wrapper{}
+.gallery__wrapper {
+  display: grid;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+
+    :nth-of-type(odd) {
+      grid-column: 1 / 2;
+    }
+
+    :nth-of-type(even) {
+      grid-column: 2 / 3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+    grid-template-columns: 300px 300px 300px;
+    row-gap: 54px;
+
+    :nth-of-type(3n+1) {
+      grid-column: 1 / 2;
+    }
+
+    :nth-of-type(3n-1) {
+      grid-column: 2 / 3;
+    }
+
+    :nth-of-type(3n) {
+      grid-column: 3 / 4;
+    }
+  }
+}

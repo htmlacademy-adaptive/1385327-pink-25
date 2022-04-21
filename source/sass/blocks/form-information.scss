@@ -1,1 +1,7 @@
-// .form-information {}
+.form-information .information__title:last-child {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

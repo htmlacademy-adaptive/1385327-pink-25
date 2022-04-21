@@ -1,6 +1,10 @@
 .main-footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 284px;
+  padding: 40px 70px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

@@ -1,12 +1,15 @@
 .main-header {
   background: url("../../img/back-mobile.png") no-repeat top;
+  background-size: 320px 462px;
 
   @media (min-width: $tablet-width) {
     background: url("../../img/back-tablet.png") no-repeat top;
+    background-size: 660px 729px;
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../img/back-desktop.png") no-repeat top;
+    background-size: 1200px 853px;
   }
 }
 

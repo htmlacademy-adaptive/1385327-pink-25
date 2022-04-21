@@ -1,26 +1,53 @@
 // .form-photo {}
-// .form-photo__wrapper{}
-// .form-photo__image{}
+
+.form-photo__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.form-photo__image {
+  width: 280px;
+  height: 374px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
 // .form-photo__filtrs{}
 // .form-photo__filtr{}
 // .form-photo__filter-crop{}
 // .form-photo__filter-fill{}
 // .form-photo__filter-contrast{}
-// .form-photo__button-editor{}
-// .form-photo__button{}
 
-.form-photo__button-submit {
+.form-photo__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form-photo__button {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.form-photo__button--submit {
   color: rgb(255, 255, 255);
   background-color: $item-accent;
 }
 
-.form-photo__button-reset {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
+.form-photo__button--reset {
   color: rgb(255, 255, 255);
   background-color: rgba(40, 54, 69, 0.1);
 }
