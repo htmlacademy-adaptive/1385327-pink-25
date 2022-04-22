@@ -11,6 +11,10 @@
   margin: 0 auto;
   width: $mobile-width;
 
+  /*
+  background: url("../../img/perfect/index-mobile-menu.png") no-repeat;
+  z-index: -1;
+*/
   @media (min-width: $tablet-width) {
     width: $tablet-width;
   }

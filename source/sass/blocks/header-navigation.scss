@@ -12,6 +12,9 @@
 
 .header-navigation--opened {
   background-color: rgb(40, 54, 69);
+  position: absolute;
+  z-index: 10;
+  width: $mobile-width;
 
   @media (min-width: $desktop-width) {
     background: none;
@@ -19,7 +22,7 @@
 }
 
 .header-navigation__logo {
-  height: 63px;
+  height: 66px;
 
   @media (min-width: $tablet-width) {
     height: 110px;
@@ -114,11 +117,18 @@
     padding-right: 130px;
   }
 }
-
+/*
+.header-navigation--opened .header-navigation__items {
+  position: absolute;
+  top: 69px;
+  z-index: 10;
+  width: 100%;
+}
+*/
 .header-navigation__item {
   display: block;
   width: 100%;
-  height: 62px;
+  height: 64px;
   background-color: $main-theme;
   border-top: 1px solid #000000;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);

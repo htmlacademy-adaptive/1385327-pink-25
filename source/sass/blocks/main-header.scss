@@ -1,4 +1,7 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 733px;
   background: url("../../img/back-mobile.png") no-repeat top;
   background-size: 320px 462px;
 

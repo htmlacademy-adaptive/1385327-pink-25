@@ -1,5 +1,5 @@
 .intro-content {
-  background-color: $main-theme;
+  background-color: rgb(29, 38, 49);
   color: rgb(255, 255, 255);
   padding-left: 20px;
   padding-right: 20px;
@@ -18,16 +18,22 @@
 .intro-content__webstores {
   margin: 0;
   padding: 0;
-  list-style: none;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 22px;
 }
 
-// .intro-content__item{}
-// .intro-content__link{}
+.intro-content__item {
+  list-style: none;
+}
+
+.intro-content__link {
+  font-size: 0;
+  line-height: 0;
+}
 
 .intro-content__description {
   text-align: center;
