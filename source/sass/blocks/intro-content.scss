@@ -1,12 +1,20 @@
 .intro-content {
   background-color: rgb(29, 38, 49);
   color: rgb(255, 255, 255);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  height: 271px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    background-color: transparent;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .intro-content__button {
@@ -18,24 +26,41 @@
 .intro-content__webstores {
   margin: 0;
   padding: 0;
-
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  padding-top: 28px;
-  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
+    padding-bottom: 47px;
+  }
 }
 
 .intro-content__item {
+  height: 56px;
   list-style: none;
 }
 
 .intro-content__link {
-  font-size: 0;
-  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 56px;
+  height: 56px;
 }
 
 .intro-content__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

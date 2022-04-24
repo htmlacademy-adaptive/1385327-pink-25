@@ -1,6 +1,26 @@
 // .slider-dot {}
+
+.slider-dot__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+}
 // .slider-dot__list {}
 // .slider-dot__item {}
 // .slider-dot__toggles {}
-// .slider-dot__toggle {}
+
+.slider-dot__toggle {
+  margin-left: 9px;
+  margin-right: 10px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  font-style: inherit;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
 // .slider-dot__toggle--current {}

@@ -1,38 +1,171 @@
 .advantages {
   background-color: $background;
+  //opacity: 0.2;
+  position: relative;
+  height: 786px;
+
+  @media (min-width: $tablet-width) {
+    height: 487px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 616px;
+  }
 }
 
-.advantages__wrapper {
-  display: grid;
+.advantages::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  height: 32px;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100px;
+  }
 }
+
+// .advantages__wrapper {
+//   background-color: $background;
+// }
 
 .advantages__items {
-  margin: o;
-  padding: 0;
+  margin: 0;
+  padding: 64px 20px 0;
   list-style: none;
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding: 0 130px;
+    justify-content: center;
+    align-items: stretch;
   }
 }
 
-// .advantages__item{}
-// .advantages__item--mood{}
-// .advantages__item--world{}
-// .advantages__item--friends{}
+.advantages__item {
+  @media (min-width: $tablet-width) {
+    width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
+}
+
+.advantages__item--mood {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/iphone-desktop-mood.png");
+    background-repeat: no-repeat;
+    background-position: 35px 0;
+    background-size: 186px 383px;
+  }
+}
+
+.advantages__item--world {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/iphone-desktop-world.png");
+    background-repeat: no-repeat;
+    background-position: 55px 0;
+    background-size: 186px 382px;
+  }
+}
+
+.advantages__item--friends {
+  background-image: url("../../img/iphone-mobail-friends.png");
+  background-repeat: no-repeat;
+  background-size: 157px 320px;
+  background-position: 50% 165px;
+  height: 440px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    height: auto;
+
+    ::before {
+      content: "";
+      background-image: url("../../img/iphone-tablet-friends.png");
+      background-size: 268px 547px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      width: 268px;
+      height: 487px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/iphone-desktop-friends.png");
+    background-size: 186px 382px;
+    background-position: 80px 0;
+
+    ::before {
+      content: none;
+    }
+
+    // ::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 300px;
+    //   left: 800px;
+    //   border-top: 2px solid rgb(0, 0, 0);
+    //   width: 235px;
+    //   //height: 90px;
+    //   background-color: $background;
+    // }
+  }
+}
 
 .advantages__title {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  margin-top: 16px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .advantages__text {
   font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
   text-align: center;
   color: $main-theme;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }

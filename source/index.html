@@ -13,29 +13,34 @@
   <header class="main-header">
 
       <nav class="header-navigation header-navigation--closed header-navigation--nojs">
+        <div class="header-navigation__wrapper">
+          <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+              <img src="img/pink.svg" width="74" height="23" alt="Pink">
+            </picture>
+          </a>
 
-        <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
-          <img src="img/pink.svg" width="74" height="23" alt="Pink">
-        </a>
+          <button class="header-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-        <button class="header-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-
-        <ul class="header-navigation__items">
-          <li class="header-navigation__item header-navigation__item--current">
-            <a class="header-navigation__link" href="#">Главная</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="header-navigation__item">
-            <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+          <ul class="header-navigation__items">
+            <li class="header-navigation__item header-navigation__item--current">
+              <a class="header-navigation__link" href="#">Главная</a>
+            </li>
+            <li class="header-navigation__item">
+              <a class="header-navigation__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="header-navigation__item">
+              <a class="header-navigation__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="header-navigation__item">
+              <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div class="header-intro">
@@ -110,8 +115,7 @@
       <div class="effect__wrapper">
         <h2 class="visually-hidden">Эффект от приложения</h2>
 
-        <div class="effect__icon"></div>
-        <p class="effect__taitl">Эффект на 24 часа!</p>
+        <p class="effect__taitl">Эффект <br>на 24 часа!</p>
         <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от
           использования приложения длится целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
@@ -125,35 +129,27 @@
 
         <ul class="reviews__items slider-dot__list">
           <li class="reviews__item slider-dot__item">
-            <blockquote class="reviews__text">
-              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                 привычные серые вещи! А еще я познакомился со своей будущей женой в
                 комментариях к выложенной фотографии!»</p>
-              <cite class="reviews__autor-name">Николай Петров</cite>
+              <p class="reviews__autor-name">Николай Петров</p>
               <p class="reviews__autor-info">25 лет, водитель трамвая</p>
-            </blockquote>
           </li>
           <li class="reviews__item slider-dot__item">
-
-            <blockquote class="reviews__text">
-              <p>«Здесь мог бы быть ваш отзыв»</p>
-              <cite class="reviews__autor-name">Аноним</cite>
+              <p class="reviews__text">«Здесь мог бы быть ваш отзыв»</p>
+              <p class="reviews__autor-name">Аноним</p>
               <p class="reviews__autor-info">ХХ лет, кто-то</p>
-            </blockquote>
           </li>
           <li class="reviews__item slider-dot__item">
-
-            <blockquote class="reviews__text">
-              <p>«Здесь мог бы быть ваш отзыв»</p>
-              <cite class="reviews__autor-name">Аноним</cite>
+              <p class="reviews__text">«Здесь мог бы быть ваш отзыв»</p>
+              <p class="reviews__autor-name">Аноним</з>
               <p class="reviews__autor-info">ХХ лет, кто-то</p>
-            </blockquote>
           </li>
         </ul>
         <div class="reviews__toggles slider-dot__toggles">
-          <button class="slider-dot__toggle slider-dot__toggle--current" type="button">.1</button>
-          <button class="slider-dot__toggle" type="button">.2</button>
-          <button class="slider-dot__toggle" type="button">.3</button>
+          <button class="slider-dot__toggle slider-dot__toggle--current" type="button"></button>
+          <button class="slider-dot__toggle" type="button"></button>
+          <button class="slider-dot__toggle" type="button"></button>
         </div>
 
         <div class="reviews__toggles slider-arrow__toggles">
@@ -179,7 +175,7 @@
                 <span class="table-price__product-type">База</span>
                 <span class="table-price__product-price">1,99 USD</span>
               </th>
-              <th class="table-price__header slider-dot__item table-price__header--hit">
+              <th class="table-price__header slider-dot__item table-price__header--hit" data-label="Хит">
                 <span class="table-price__product-type">Стандарт</span>
                 <span class="table-price__product-price">3,99 USD</span>
               </th>
@@ -194,21 +190,21 @@
             <tr>
               <td class="table-price__cell">Розовый фильтр</td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Розовый фильтр">
                   <span class="table-price__feature-value table-price__feature-value--true">
                     <span class="visually-hidden">Да</span>
                   </span>
                 </div>
               </td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Розовый фильтр">
                   <span class="table-price__feature-value table-price__feature-value--true">
                     <span class="visually-hidden">Да</span>
                   </span>
                 </div>
               </td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Розовый фильтр">
                   <span class="table-price__feature-value table-price__feature-value--true">
                     <span class="visually-hidden">Да</span>
                   </span>
@@ -219,21 +215,21 @@
             <tr>
               <td class="table-price__cell">Смайлики</td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Смайлики">
                   <span class="table-price__feature-value table-price__feature-value--false">
                     <span class="visually-hidden">Нет</span>
                   </span>
                 </div>
               </td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Смайлики">
                   <span class="table-price__feature-value table-price__feature-value--true">
                     <span class="visually-hidden">Да</span>
                   </span>
                 </div>
               </td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Смайлики">
                   <span class="table-price__feature-value table-price__feature-value--true">
                     <span class="visually-hidden">Да</span>
                   </span>
@@ -244,21 +240,21 @@
             <tr>
               <td class="table-price__cell">Комментарии</td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Комментарии">
                   <span class="table-price__feature-value table-price__feature-value--false">
                     <span class="visually-hidden">Нет</span>
                   </span>
                 </div>
               </td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Комментарии">
                   <span class="table-price__feature-value table-price__feature-value--false">
                     <span class="visually-hidden">Нет</span>
                   </span>
                 </div>
               </td>
               <td class="table-price__cell">
-                <div class="table-price__feature">
+                <div class="table-price__feature" data-label="Комментарии">
                   <span class="table-price__feature-value table-price__feature-value--true">
                     <span class="visually-hidden">Да</span>
                   </span>
@@ -269,9 +265,9 @@
         </table>
 
         <div class="price__toggles slider-dot__toggles">
-          <button class="slider-dot__toggle" type="button">.1</button>
-          <button class="slider-dot__toggle slider-dot__toggle--current" type="button">.2</button>
-          <button class="slider-dot__toggle" type="button">.3</button>
+          <button class="slider-dot__toggle" type="button"></button>
+          <button class="slider-dot__toggle slider-dot__toggle--current" type="button"></button>
+          <button class="slider-dot__toggle" type="button"></button>
         </div>
       </div>
     </section>
@@ -301,6 +297,9 @@
         </ul>
 
         <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871600612!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650636017655!5m2!1sru!2sru"
+          width="320" height="200" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу ул. Большая Конюшенная, 19/8 С.Питербург"></iframe>
         </div>
       </div>
     </section>
@@ -329,9 +328,9 @@
       </a>
     </div>
   </footer>
-<!--
+
 <script src="./js/script.js"></script>
--->
+
 </body>
 
 </html>

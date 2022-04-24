@@ -13,9 +13,13 @@
   <header class="main-header">
 
       <nav class="header-navigation header-navigation--closed header-navigation--nojs">
-
+        <div class="header-navigation__wrapper">
           <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
-            <img src="img/pink.svg" width="74" height="23" alt="Pink">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+              <img src="img/pink.svg" width="74" height="23" alt="Pink">
+            </picture>
           </a>
 
           <button class="header-navigation__toggle" type="button">
@@ -36,6 +40,7 @@
               <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
+        </div>
       </nav>
       <div class="header-intro header-intro--inner">
         <div class="header-intro__wrapper">

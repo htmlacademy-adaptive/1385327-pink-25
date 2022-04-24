@@ -1,20 +1,37 @@
-.header-navigation {
+.header-navigation--opened {
+  padding-top: 66px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+  }
+}
+
+.header-navigation__wrapper {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
+  // margin-left: 20px;
+  // margin-right: 20px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
-.header-navigation--opened {
+.header-navigation--opened .header-navigation__wrapper {
   background-color: rgb(40, 54, 69);
   position: absolute;
+  top: 0;
   z-index: 10;
   width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 
   @media (min-width: $desktop-width) {
     background: none;
@@ -33,7 +50,7 @@
   height: 69px;
 
   @media (min-width: $tablet-width) {
-    height: 110px;
+    height: 109px;
   }
 }
 
@@ -53,7 +70,6 @@
 
   @media (min-width: $desktop-width) {
     width: 147px;
-    margin-left: 130px;
   }
 }
 
@@ -114,17 +130,9 @@
     background: none;
     width: 793px;
     align-items: center;
-    padding-right: 130px;
   }
 }
-/*
-.header-navigation--opened .header-navigation__items {
-  position: absolute;
-  top: 69px;
-  z-index: 10;
-  width: 100%;
-}
-*/
+
 .header-navigation__item {
   display: block;
   width: 100%;
@@ -160,7 +168,6 @@
     padding-left: 79px;
     padding-top: 48px;
     text-align: right;
-    display: inline-block;
   }
 }
 
@@ -168,6 +175,21 @@
   .header-navigation--closed .header-navigation__item {
     display: none;
   }
+}
+
+.header-navigation--nojs {
+  padding-top: 66px;
+}
+
+.header-navigation--nojs .header-navigation__wrapper {
+  background-color: rgb(40, 54, 69);
+  position: absolute;
+  top: 0;
+  width: $mobile-width;
+}
+
+.header-navigation--nojs .header-navigation__logo {
+  height: 69px;
 }
 
 .header-navigation--nojs .header-navigation__toggle {
@@ -179,6 +201,6 @@
   min-height: 0;
 }
 
-.header-navigation--nojs .site-list__item {
+.header-navigation--nojs .header-navigation__item {
   display: block;
 }
