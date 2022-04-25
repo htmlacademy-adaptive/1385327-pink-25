@@ -18,9 +18,19 @@
 }
 
 .intro-content__button {
-  border: 3px solid #ffffff;
+  border: 3px solid rgb(255, 255, 255);
   text-decoration: none;
   color: rgb(255, 255, 255);
+
+  :hover {
+    color: $item-accent;
+    background: rgb(255, 255, 255);
+  }
+
+  :active {
+    color: rgb(210, 40, 86, 0.3);
+    background-color: rgb(255, 255, 255);
+  }
 }
 
 .intro-content__webstores {

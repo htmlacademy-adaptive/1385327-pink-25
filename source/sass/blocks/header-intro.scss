@@ -47,4 +47,12 @@
 
 .header-intro--inner .header-intro__wrapper {
   height: 171px;
+
+  @media (min-width: $tablet-width) {
+    height: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 284px;
+  }
 }

@@ -11,8 +11,6 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
-  // margin-left: 20px;
-  // margin-right: 20px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -147,6 +145,14 @@
     border: none;
     height: 110px;
     width: auto;
+  }
+
+  :hover {
+    color: $item-accent;
+  }
+
+  :active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
