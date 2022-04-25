@@ -154,9 +154,9 @@
 
         <div class="reviews__toggles slider-arrow__toggles">
           <button class="slider-arrow__toggle  slider-arrow__toggle--prev" type="button"
-            title="Предыдущий отзыв">&lt;</button>
+            title="Предыдущий отзыв"></button>
           <button class="slider-arrow__toggle  slider-arrow__toggle--next" type="button"
-            title="Следующий отзыв">&gt;</button>
+            title="Следующий отзыв"></button>
         </div>
       </div>
     </section>
@@ -307,7 +307,10 @@
 
   <footer class="main-footer">
     <a class="footer-logo logo">
-      <img src="img/logotype-blue-tablet.svg" width="140" height="40" alt="Pink">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logotype-blue-desktop.svg">
+        <img src="img/logotype-blue-tablet.svg" width="140" height="40" alt="Pink">
+      </picture>
     </a>
     <ul class="footer-social">
       <li class="footer-social__item">
@@ -324,7 +327,7 @@
     <div class="footer-copyright">
       <span class="footer-copyright__text">Разработано</span>
       <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Pink">
+        <img src="./img/htmlAcademy.svg" width="27" height="34" alt="Pink">
       </a>
     </div>
   </footer>

@@ -7,6 +7,7 @@
   text-align: center;
   color: $main-theme;
   margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -16,20 +17,5 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
-  }
-}
-
-.information__title:last-child {
-  margin-top: 31px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 370px;
-    margin-right: 370px;
   }
 }

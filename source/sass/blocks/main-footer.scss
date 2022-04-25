@@ -7,7 +7,14 @@
   padding: 40px 70px;
 
   @media (min-width: $tablet-width) {
+    height: 127px;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 197px;
+    padding: 0 130px;
   }
 }

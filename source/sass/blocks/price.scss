@@ -1,11 +1,12 @@
 .price {
   background-color: $background;
   position: relative;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 32px;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
-    padding-top: 123px;
+    padding-top: 97px;
     padding-bottom: 70px;
     padding-left: 20px;
     padding-right: 20px;
@@ -51,9 +52,9 @@
   }
 }
 
-.price__toggles {
-  padding-top: 43px;
-  padding-bottom: 15px;
+.price__toggles.slider-dot__toggles {
+  padding-top: 46px;
+  padding-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     display: none;

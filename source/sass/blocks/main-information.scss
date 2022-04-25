@@ -14,3 +14,18 @@
     padding-bottom: 56px;
   }
 }
+
+.main-information .information__title:last-child {
+  margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 370px;
+    margin-right: 370px;
+  }
+}

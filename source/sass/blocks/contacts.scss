@@ -1,34 +1,58 @@
 .contacts {
-  margin: 50px 0 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
 }
 
 //.contacts__wrapper{}
 .contacts__information {
-  margin: 0;
-}
-
-.contacts__information .information__title:last-child {
-  margin-top: 0;
+  margin: 10px 20px 10px;
 }
 
 .contacts__items {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  //align-items: center;
-  padding: 0 20px;
-  margin: 0;
-  padding-top: 35px;
+  margin: 0 20px;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 130px;
+    padding-top: 12px;
   }
 }
 
 .contacts__item {
+  display: block;
   list-style: none;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //padding: 0;
+  }
 }
 
 .contacts__item--phone {
@@ -45,11 +69,13 @@
 
 .contacts__item--location {
   @media (min-width: $tablet-width) {
+    padding: 42px 170px 0;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
+    padding: 20px 25px 0;
   }
 }
 
@@ -60,8 +86,10 @@
   color: $main-theme;
   text-align: center;
   margin: 0;
-  // margin-top: 35px;
-  // margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .contacts__link {
@@ -72,6 +100,10 @@
   text-decoration: none;
   text-align: center;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .contacts__map {
@@ -81,6 +113,16 @@
 .contacts__map iframe {
   border: none;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 502px;
+  }
 }
 
 .contacts__map::before {
