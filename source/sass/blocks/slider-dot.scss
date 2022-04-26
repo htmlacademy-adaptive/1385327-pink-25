@@ -18,8 +18,20 @@
   border: 0;
   border-radius: 50%;
   font-style: inherit;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(40, 54, 69, 0.3);
   cursor: pointer;
-}
 
-// .slider-dot__toggle--current {}
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--current {
+    box-shadow: 0 0 0 3px $main-theme;
+    background-color: transparent;
+    cursor: default;
+  }
+}

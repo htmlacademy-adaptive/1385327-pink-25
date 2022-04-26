@@ -22,12 +22,12 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
 
-  :hover {
+  &:hover {
     color: $item-accent;
     background: rgb(255, 255, 255);
   }
 
-  :active {
+  &:active {
     color: rgb(210, 40, 86, 0.3);
     background-color: rgb(255, 255, 255);
   }

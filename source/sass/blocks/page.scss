@@ -12,20 +12,20 @@
   margin: 0 auto;
   width: $mobile-width;
   //background: url("../../img/perfect/index-mobile-menu.png") no-repeat;
-  background: url("../../img/perfect/index-mobile.png") no-repeat center 0;
-  z-index: -1;
+  //background: url("../../img/perfect/index-mobile.png") no-repeat center 0;
+  //z-index: -1;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    background: url("../../img/perfect/index-tablet.jpg") no-repeat center 0;
+    //background: url("../../img/perfect/index-tablet.jpg") no-repeat center 0;
     //background: url("../../img/perfect/index-tablet-menu.png") no-repeat;
-    z-index: -1;
+    //z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
 
-    background: url("../../img/perfect/index-desktop.jpg") no-repeat center 0;
-    z-index: -1;
+    //background: url("../../img/perfect/index-desktop.jpg") no-repeat center 0;
+    //z-index: -1;
   }
 }

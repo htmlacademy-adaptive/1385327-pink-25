@@ -29,13 +29,18 @@
     height: 27px;
     border-bottom: none;
     border-left: none;
-    border-top: 2px solid rgb(0, 0, 0);
-    border-right: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgba(40, 54, 69, 0.3);
+    border-right: 2px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:hover::before {
+    border-top-color: rgba(40, 54, 69, 0.6);
+    border-right-color: rgba(40, 54, 69, 0.6);
   }
 
   &:active::before {
-    border-top-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgba(40, 54, 69, 0.1);
+    border-right-color: rgba(40, 54, 69, 0.1);
   }
 
   &--prev::before {
@@ -48,7 +53,3 @@
     transform: translateY(-50%) rotate(45deg);
   }
 }
-
-
-// .slider-arrow__toggle--prev {}
-// .slider-arrow__toggle--next {}
