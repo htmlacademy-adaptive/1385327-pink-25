@@ -47,14 +47,30 @@
 
 .form-feedback__label {
   font-size: 14px;
-  line-height: 30px;
-  color: $item-accent;
+  //line-height: 30px;
+  //color: $item-accent;
+  cursor: pointer;
+  line-height: 50px;
+  padding: 0 0 0 60px;
 }
 
 .form-feedback__input {
   font-size: 18px;
   line-height: 30px;
   color: $main-theme;
+}
+
+input[type="text"] {
+  border: 2px solid rgb(229, 229, 229);
+  outline: none;
+}
+
+input[type="text"]:hover {
+  border-color: $main-theme;
+}
+
+input[type="text"]:focus {
+  border-color: $item-accent;
 }
 
 .form-feedback__achivments {
@@ -85,8 +101,43 @@
 
 .form-feedback__label-checkbox {
   font-size: 18px;
-  line-height: 30px;
+  //line-height: 30px;
   color: $main-theme;
+  position: relative;
+  cursor: pointer;
+  line-height: 50px;
+  padding: 0 0 0 60px;
+}
+
+input[type="checkbox"] + .form-feedback__label-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 1px;
+}
+
+input[type="checkbox"]:hover + .form-feedback__label-checkbox::before {
+  border-color: $main-theme;
+}
+
+input[type="checkbox"]:active + .form-feedback__label-checkbox::before {
+  border-color: $item-accent;
+}
+
+input[type="checkbox"]:checked + .form-feedback__label-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  width: 22px;
+  height: 10px;
+  border-left: 2px solid $item-accent;
+  border-bottom: 2px solid $item-accent;
+  transform: rotate(-45deg);
 }
 
 .form-feedback__contacts {
@@ -122,8 +173,46 @@
 // .form-feedback__platform-wrapper {}
 // .form-feedback__fieldset--platform {}
 // .form-feedback__platform-item {}
-// .form-feedback__radio {}
-// .form-feedback__label-radio {}
+
+//.form-feedback__radio {}
+
+input[type="radio"] + .form-feedback__label-radio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  box-sizing: border-box;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 50%;
+}
+
+input[type="radio"]:hover + .form-feedback__label-radio::before {
+  border-color: $main-theme;
+}
+
+input[type="radio"]:active + .form-feedback__label-radio::before {
+  border-color: $item-accent;
+}
+
+input[type="radio"]:checked + .form-feedback__label-radio::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: $item-accent;
+}
+
+.form-feedback__label-radio {
+  position: relative;
+  cursor: pointer;
+  line-height: 50px;
+  padding: 0 0 0 60px;
+}
 
 .form-feedback__emotions {
   @media (min-width: $tablet-width) {
