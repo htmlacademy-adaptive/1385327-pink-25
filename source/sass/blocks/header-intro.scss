@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 110px;
-  justify-content: end;
+  justify-content: flex-end;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/screen-phone-tablet.png");

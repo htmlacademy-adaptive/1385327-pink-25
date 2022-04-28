@@ -139,20 +139,20 @@
   border-top: 1px solid #000000;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
-  @media (min-width: $desktop-width) {
-    background: none;
-    box-shadow: none;
-    border: none;
-    height: 110px;
-    width: auto;
-  }
-
   :hover {
     color: $item-accent;
   }
 
   :active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+    box-shadow: none;
+    border: none;
+    height: 110px;
+    width: auto;
   }
 }
 
