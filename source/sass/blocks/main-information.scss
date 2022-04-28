@@ -1,5 +1,31 @@
 .main-information {
-  height: 250px;
-  padding-top: 46px;
-  padding-bottom: 70px;
+  height: 216px;
+  padding-top: 41px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
+}
+
+.main-information .information__title:last-child {
+  margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 370px;
+    margin-right: 370px;
+  }
 }

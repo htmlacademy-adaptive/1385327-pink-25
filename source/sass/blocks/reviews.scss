@@ -1,4 +1,14 @@
-// .reviews {}
+.reviews {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+    padding-left: 130px;
+    padding-right: 130px;
+    position: relative;
+  }
+}
 
 // .reviews__wpapper{}
 
@@ -9,6 +19,10 @@
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
   &:nth-of-type(2) {
     display: none;
   }
@@ -16,19 +30,52 @@
   &:nth-of-type(3) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    align-items: center;
+  }
 }
 
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
+  font-weight: 400;
   text-align: center;
   color: $main-theme;
+  order: 2;
+  margin: 12px 20px 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    order: 1;
+    margin-top: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 180px 0 30px;
+  }
 }
 
 .reviews__autor-name {
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
+  text-align: center;
   color: rgb(0, 0, 0);
+  order: 1;
+  margin: 0;
+  margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    order: 2;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .reviews__autor-info {
@@ -36,8 +83,42 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
     color: $main-theme;
+    text-align: center;
+    order: 3;
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      margin-top: 3px;
+    }
   }
 }
 
-// .reviews__toggles{}
+.reviews__toggles.slider-dot__toggles {
+  padding-top: 7px;
+  padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__toggles.slider-arrow__toggles {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 52%;
+    left: 130px;
+    right: 130px;
+  }
+}

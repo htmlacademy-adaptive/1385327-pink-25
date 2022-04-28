@@ -1,8 +1,21 @@
-// .information {}
+//.information {}
 
 .information__title {
   font-size: 24px;
-  line-height: 28.8px;
+  line-height: 28px;
+  font-weight: 300;
   text-align: center;
   color: $main-theme;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

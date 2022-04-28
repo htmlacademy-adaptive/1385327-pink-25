@@ -1,23 +1,58 @@
 .contacts {
-  padding: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
 }
-// .contacts__wrapper{}
+
+//.contacts__wrapper{}
+.contacts__information {
+  margin: 10px 20px 10px;
+}
+
 .contacts__items {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 20px;
   padding: 0;
-  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 130px;
+    padding-top: 12px;
   }
 }
 
 .contacts__item {
+  display: block;
   list-style: none;
+  padding-top: 20px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //padding: 0;
+  }
 }
 
 .contacts__item--phone {
@@ -34,30 +69,77 @@
 
 .contacts__item--location {
   @media (min-width: $tablet-width) {
+    padding: 42px 170px 0;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
     order: 2;
+    padding: 20px 25px 0;
   }
 }
 
 .contacts__list {
   font-size: 18px;
-  line-height: 24.51px;
+  line-height: 24px;
   font-weight: 700;
   color: $main-theme;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 15px;
+  }
 }
 
 .contacts__link {
   font-size: 24px;
-  line-height: 32.68px;
+  line-height: 32px;
   font-weight: 300;
   color: $item-accent;
   text-decoration: none;
   text-align: center;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
 
-// .contacts__map {}
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map iframe {
+  border: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 502px;
+  }
+}
+
+.contacts__map::before {
+  background-color: rgb(255, 255, 255);
+  content: "";
+  width: 100%;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(100% 0, 50% 100%, 0 0);
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 103px;
+  }
+}

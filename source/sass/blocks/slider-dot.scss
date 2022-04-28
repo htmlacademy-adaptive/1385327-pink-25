@@ -1,6 +1,37 @@
 // .slider-dot {}
 // .slider-dot__list {}
 // .slider-dot__item {}
-// .slider-dot__toggles {}
-// .slider-dot__toggle {}
-// .slider-dot__toggle--current {}
+
+.slider-dot__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+}
+
+.slider-dot__toggle {
+  margin-left: 9px;
+  margin-right: 10px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  font-style: inherit;
+  background-color: rgba(40, 54, 69, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    border-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--current {
+    box-shadow: 0 0 0 3px $main-theme;
+    background-color: transparent;
+    cursor: default;
+  }
+}

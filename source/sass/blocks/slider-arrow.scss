@@ -1,5 +1,55 @@
 // .slider-arrow {}
-// .slider-arrow__toggles {}
-// .slider-arrow__toggle {}
-// .slider-arrow__toggle--prev {}
-// .slider-arrow__toggle--next {}
+
+.slider-arrow__toggles {
+  @media (max-width: $desktop-width-only) {
+    display: none;
+  }
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-arrow__toggle {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0;
+  width: 22px;
+  height: 41px;
+  border: 0;
+  font-style: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 27px;
+    border-bottom: none;
+    border-left: none;
+    border-top: 2px solid rgba(40, 54, 69, 0.3);
+    border-right: 2px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &:hover::before {
+    border-top-color: rgba(40, 54, 69, 0.6);
+    border-right-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active::before {
+    border-top-color: rgba(40, 54, 69, 0.1);
+    border-right-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--prev::before {
+    left: 7px;
+    transform: translateY(-50%) rotate(225deg);
+  }
+
+  &--next::before {
+    right: 7px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}

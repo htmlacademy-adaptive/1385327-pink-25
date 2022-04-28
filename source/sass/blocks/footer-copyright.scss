@@ -3,7 +3,11 @@
 .footer-copyright__text {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   color: $main-theme;
 }
 
-//.footer-copyright__link {}
+.footer-copyright__link img {
+  width: 27px;
+  height: 34px;
+}
