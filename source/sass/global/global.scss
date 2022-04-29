@@ -23,16 +23,12 @@ img {
 }
 
 .button {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 55px;
-  padding: auto;
-  border-radius: 29px;
+  padding: 0;
   cursor: pointer;
 }

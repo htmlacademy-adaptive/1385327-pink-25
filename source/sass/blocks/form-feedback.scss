@@ -24,8 +24,15 @@
   }
 }
 // .form-feedback__name-wrapper {}
-// .form-feedback__fiedset {}
-// .form-feedback__fiedset--name {}
+
+.form-feedback__fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.form-feedback__fieldset--name {
+  border: none;
+}
 
 .form-feedback__list {
   margin: 0;
@@ -51,7 +58,7 @@
   //color: $item-accent;
   cursor: pointer;
   line-height: 50px;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 20px;
 }
 
 .form-feedback__input {
@@ -63,6 +70,7 @@
 input[type="text"] {
   border: 2px solid rgb(229, 229, 229);
   outline: none;
+  width: 100%;
 }
 
 input[type="text"]:hover {
