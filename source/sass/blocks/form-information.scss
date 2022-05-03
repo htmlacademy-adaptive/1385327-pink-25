@@ -1,7 +1,40 @@
-.form-information .information__title:last-child {
+.form-information {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 44px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 90px 50px 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 33px;
+  }
+}
+
+.form-information br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form-information span {
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: inline;
+  }
+}
+
+.form-information .information__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
   }
 }

@@ -54,15 +54,23 @@
     <h1 class="visually-hidden">Каталог фотографий пользователей</h1>
 
     <div class="catalog-information information">
-      <p class="information__title">Взгляни на фоторгафии, которые выкладывают пользователи!</p>
-      <p class="information__title">Видите, как не хватает ваших?</p>
+      <p class="information__title">Взгляни на фоторгафии, которые выкладывают пользователи!<br><span>Видите, как не хватает ваших?</span></p>
     </div>
 
     <section class="gallery">
       <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
 
       <figure class="photo photo--panorama">
-          <img class="photo__link" src="img/catalog/AnnaPanorama.png" alt="panorama-mobile">
+        <a class="photo__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/panoramaDesktop@1x.jpg 1x, img/catalog/panoramaDesktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/catalog/panoramaTablet@1x.jpg 1x, img/catalog/panoramaTablet@2x.jpg 2x">
+            <img src="img/catalog/panoramaMobile@1x.jpg"
+              srcset="img/catalog/panoramaMobile@2x.jpg 2x" alt="Панорама дня. Автор Анна.">
+          </picture>
+        </a>
         <span class="photo__name">Панорама дня</span>
 
         <figcaption class="photo__info photo__info--panorama">
@@ -84,10 +92,18 @@
       </figure>
 
       <div class="gallery__wrapper">
-        <!--!wrapper-->
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/catalog/LevonPhoto.png" width="280" height="180" alt="photo-1-mobile">
+          <a class="photo__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photoCarDesktop@1x.jpg 1x, img/catalog/photoCarDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/photoCarTablet@1x.jpg 1x, img/catalog/photoCarTablet@2x.jpg 2x">
+              <img src="img/catalog/photoCarMobile@1x.jpg"
+                srcset="img/catalog/photoCarMobile@2x.jpg 2x" alt="Фотография съемки автомобиля. Автор Левон">
+            </picture>
+          </a>
           <figcaption class="photo__info">
             <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo__author">
@@ -104,7 +120,16 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/catalog/AntonPhoto.png" width="280" height="180" alt="photo-2-mobile">
+          <a class="photo__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photoDrumsetDesktop@1x.jpg 1x, img/catalog/photoDrumsetDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/photoDrumsetTablet@1x.jpg 1x, img/catalog/photoDrumsetTablet@2x.jpg 2x">
+              <img src="img/catalog/photoDrumsetMobile@1x.jpg"
+                srcset="img/catalog/photoDrumsetMobile@2x.jpg 2x" alt="Фотография ударной установки. Автор Антон.">
+            </picture>
+          </a>
           <figcaption class="photo__info">
             <p class="photo__text">Соседи будут рады!</p>
             <div class="photo__author">
@@ -112,7 +137,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(12 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
+              <button class="photo__statistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart"></button>
               <span class="photo__statistic-text">Нравится: 666</span>
             </div>
@@ -120,7 +145,16 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/catalog/BorisPhoto.png" width="280" height="180" alt="photo-3-mobile">
+          <a class="photo__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photoWindowDesktop@1x.jpg 1x, img/catalog/photoWindowDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/photoWindowTablet@1x.jpg 1x, img/catalog/photoWindowTablet@2x.jpg 2x">
+              <img src="img/catalog/photoWindowMobile@1x.jpg"
+                srcset="img/catalog/photoWindowMobile@2x.jpg 2x" alt="Фотография стеклянного фосада. Автор Борис.">
+            </picture>
+          </a>
           <figcaption class="photo__info">
             <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo__author">
@@ -128,7 +162,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(20 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
+              <button class="photo__statistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 215</span>
@@ -137,7 +171,16 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/catalog/SergPhoto.png" width="280" height="180" alt="photo-4-mobile">
+          <a class="photo__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photoMarketDesktop@1x.jpg 1x, img/catalog/photoMarketDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/photoMarketTablet@1x.jpg 1x, img/catalog/photoMarketTablet@2x.jpg 2x">
+              <img src="img/catalog/photoMarketMobile@1x.jpg"
+                srcset="img/catalog/photoMarketMobile@2x.jpg 2x" alt="Фотография базара. Автор Сергей.">
+            </picture>
+          </a>
           <figcaption class="photo__info">
             <p class="photo__text">Самая кубанская в мире!</p>
             <div class="photo__author">
@@ -145,7 +188,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(25 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
+              <button class="photo__statistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 4</span>
@@ -154,7 +197,16 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/catalog/MaksimPhoto.png" width="280" height="180" alt="photo-5-mobile">
+          <a class="photo__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photoSlopeDesktop@1x.jpg 1x, img/catalog/photoSlopeDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/photoSlopeTablet@1x.jpg 1x, img/catalog/photoSlopeTablet@2x.jpg 2x">
+              <img src="img/catalog/photoSlopeMobile@1x.jpg"
+                srcset="img/catalog/photoSlopeMobile@2x.jpg 2x" alt="Фотография склона горы. Автор Максим.">
+            </picture>
+          </a>
           <figcaption class="photo__info">
             <p class="photo__text">Где снег-то?</p>
             <div class="photo__author">
@@ -162,7 +214,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(40 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
+              <button class="photo__statistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 150</span>
@@ -171,7 +223,16 @@
         </figure>
 
         <figure class="photo photo--gallery">
-          <img class="photo__link" src="img/catalog/NadyaPhoto.png" width="280" height="180" alt="photo-6-mobile">
+          <a class="photo__link" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photoWingDesktop@1x.jpg 1x, img/catalog/photoWingDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/photoWingTablet@1x.jpg 1x, img/catalog/photoWingTablet@2x.jpg 2x">
+              <img src="img/catalog/photoWingMobile@1x.jpg"
+                srcset="img/catalog/photoWingMobile@2x.jpg 2x" alt="Фотография крыла самолета. Автор Надежда.">
+            </picture>
+          </a>
           <figcaption class="photo__info">
             <p class="photo__text">Всем GM и взаимные лайки!</p>
             <div class="photo__author">
@@ -179,7 +240,7 @@
               <time class="photo__author-date" datetime="2022-04-03T11:00">(45 часов назад)</time>
             </div>
             <div class="photo__statistic">
-              <button class="photo__ststistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
+              <button class="photo__statistic-button" type="button"><img src="img/catalog/heart.svg" width="13" height="12"
                   alt="heart">
               </button>
               <span class="photo__statistic-text">Нравится: 2560</span>
@@ -195,36 +256,45 @@
     </div>
 
     <section class="photo-editor">
-      <!--                                                                                                                    todo photo-editor-->
+
       <h2 class="visually-hidden">Фоторедактор</h2>
       <form class="form-photo" action="https://echo.htmlacademy.ru">
         <div class="form-photo__wrapper">
-          <!--!wrapper-->
-          <img class="form-photo__image" src="img/catalog/EditorPhoto.png" alt="photo-7-mobile">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photoRoadDesktop@1x.jpg 1x, img/catalog/photoRoadDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/photoRoadTablet@1x.jpg 1x, img/catalog/photoRoadTablet@2x.jpg 2x">
+              <img class="form-photo__image" src="img/catalog/photoRoadMobile@1x.jpg"
+                srcset="img/catalog/photoRoadMobile@2x.jpg 2x" alt="Фотография для редактирования. Фотография зимней дороги в лесу.">
+            </picture>
 
-          <div class="form-photo__filters">
+          <div class="form-photo__filters-buttons">
 
+            <button class="form-photo__button-editor">
+              <img src="img/catalog/crop.svg" width="44" height="44" alt="crop">
+            </button>
+
+            <button class="form-photo__button-editor">
+              <img src="img/catalog/fill.svg" width="48" height="43" alt="fill">
+            </button>
+
+            <button class="form-photo__button-editor">
+              <img src="img/catalog/contrast.svg" width="32" height="32" alt="contrast">
+            </button>
+          </div>
             <div class="form-photo__filter form-photo__filter-crop">
-              <button class="form-photo__button-editor">
-                <img src="img/catalog/crop.svg" width="44" height="44" alt="crop">
-              </button>
-              <input id="crop" type="range" name="crop" min="0" max="100" value="90" step="10">
+              <input id="crop" type="range" name="crop" min="0" max="100" value="85" step="1">
               <label class="visually-hidden" for="crop">Обрезка</label>
             </div>
 
             <div class=" form-photo__filter form-photo__filter-fill">
-              <button class="form-photo__button-editor">
-                <img src="img/catalog/fill.svg" width="48" height="43" alt="fill">
-              </button>
-              <input id="fill" type="range" name="fill" min="0" max="100" value="20" step="10">
+              <input id="fill" type="range" name="fill" min="0" max="100" value="12" step="1">
               <label class="visually-hidden" for="fill">Заливка</label>
             </div>
 
             <div class="form-photo__filter form-photo__filter-contrast">
-              <button class="form-photo__button-editor">
-                <img src="img/catalog/contrast.svg" width="32" height="32" alt="contrast">
-              </button>
-              <input id="contrast" type="range" name="contrast" min="0" max="100" value="60" step="10">
+              <input id="contrast" type="range" name="contrast" min="0" max="100" value="50" step="1">
               <label class="visually-hidden" for="contrast">Контрастность</label>
             </div>
 
@@ -232,7 +302,7 @@
               <button class="form-photo__button button form-photo__button--submit" type="submit">Запостить</button>
               <button class="form-photo__button button form-photo__button--reset" type="reset">Отмена</button>
             </div>
-          </div>
+
         </div>
       </form>
     </section>

@@ -2,6 +2,7 @@
 .gallery__wrapper {
   display: grid;
   padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 300px 300px;
