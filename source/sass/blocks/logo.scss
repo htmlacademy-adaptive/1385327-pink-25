@@ -1,4 +1,6 @@
-// .logo img {
-//   :hover {$item-accent;}
-//   :active {rgba(255, 255, 255, 0.3);}
-// }
+.logo img {
+  :hover {
+    color: $item-accent;
+  }
+  //:active {rgba(255, 255, 255, 0.3);}
+}
