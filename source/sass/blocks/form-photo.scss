@@ -1,18 +1,45 @@
-// .form-photo {}
-
-.form-photo__wrapper {
-  display: flex;
-  flex-direction: column;
+.form-photo {
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    padding-top: 57px;
+    padding-bottom: 55px;
+  }
+}
+
+.form-photo__wrapper {
+  display: grid;
+  grid-template-areas: "photo" "filtersBtn" "filtersRange1" "formBtn";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 300px 100px 220px;
+    grid-template-rows: 55px 75px 70px 40px 80px 80px;
+    grid-template-areas:
+      "photo filtersBtn filtersRange1"
+      "photo filtersBtn filtersRange2"
+      "photo filtersBtn filtersRange3"
+      "photo . ."
+      "photo formBtn formBtn"
+      "photo formBtn formBtn";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 300px 180px auto;
+    grid-template-rows: 55px 75px 70px 40px 80px 80px;
+    grid-template-areas:
+      "photo filtersBtn filtersRange1"
+      "photo filtersBtn filtersRange2"
+      "photo filtersBtn filtersRange3"
+      "photo . ."
+      "photo . ."
+      "photo formBtn formBtn";
   }
 }
 
 .form-photo__image {
   width: 280px;
   height: 374px;
-  margin-top: 20px;
+  grid-area: photo;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -20,19 +47,148 @@
   }
 }
 
-// .form-photo__filtrs{}
-// .form-photo__filtr{}
-// .form-photo__filter-crop{}
-// .form-photo__filter-fill{}
-// .form-photo__filter-contrast{}
+.form-photo__filters-buttons {
+  padding-top: 35px;
+  padding-left: 22px;
+  padding-right: 28px;
+  grid-area: filtersBtn;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "cropBtn fillBtn contBtn";
 
-.form-photo__buttons {
-  display: flex;
-  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 55px 75px 70px;
+    grid-template-areas: "cropBtn" "fillBtn" "contBtn";
+    padding: 0;
+    padding-left: 50px;
+  }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    padding-left: 90px;
+  }
+}
+
+.form-photo__button-editor {
+  border: 0;
+
+  &:nth-of-type(1) {
+    grid-area: cropBtn;
+
+    @media (min-width: $tablet-width) {
+      width: 22px;
+      height: 22px;
+      margin-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &:nth-of-type(2) {
+    grid-area: fillBtn;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 22px;
+      margin-top: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    grid-area: contBtn;
+
+    @media (min-width: $tablet-width) {
+      width: 16px;
+      height: 16px;
+      margin-top: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.form-photo__filter {
+  padding-top: 17px;
+  padding-bottom: 27px;
+  width: 240px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.form-photo__filter-crop {
+  //display: none;
+  grid-area: filtersRange1;
+
+  @media (min-width: $tablet-width) {
+    //display: none;
+    padding-top: 4px;
+  }
+}
+
+.form-photo__filter-fill {
+  display: none;
+  grid-area: filtersRange2;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 22px;
+  }
+}
+
+.form-photo__filter-contrast {
+  display: none;
+  grid-area: filtersRange3;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 17px;
+  }
+}
+
+.form-photo__buttons {
+  height: 202px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  grid-area: formBtn;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-left: auto;
+    margin-right: 15px;
+    padding: 0;
+    grid-template-rows: 80px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    height: 80px;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 44px;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 
@@ -40,14 +196,93 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  height: 55px;
+  border: 3px solid $item-accent;
+  border-radius: 30px;
+  background-color: $background;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
 
 .form-photo__button--submit {
-  color: rgb(255, 255, 255);
-  background-color: $item-accent;
+  color: $item-accent;
+
+  &:hover {
+    background-color: $item-accent;
+    color: rgb(255, 255, 255);
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+  }
 }
 
 .form-photo__button--reset {
-  color: rgb(255, 255, 255);
-  background-color: rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+}
+
+input[type="range"] {/*----------------------------------------------------------------------------*/
+  width: 240px;
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: $main-theme;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: rgb(255, 255, 255);
+  border: 2px solid $item-accent;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  //-webkit-appearance: none;
+  margin-top: -7px;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background: $item-accent;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 2px;
+  background-color: $main-theme;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: 2px solid $item-accent;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  background: $item-accent;
 }
