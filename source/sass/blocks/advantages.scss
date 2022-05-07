@@ -160,14 +160,28 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    text-align: center;
     padding-top: 350px;
-    padding-left: 30px;
-    padding-right: 30px;
+  }
+}
+
+
+.advantages__item--mood .advantages__title {
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.advantages__item--friends .advantages__title {
+  @media (min-width: $desktop-width) {
+    padding-left: 55px;
+    padding-right: 15px;
   }
 }
 
@@ -181,12 +195,33 @@
   @media (min-width: $tablet-width) {
     margin-top: 10px;
     margin-bottom: 25px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-top: 22px;
+    text-align: center;
+  }
+}
+
+.advantages__item--mood .advantages__text {
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+}
+
+.advantages__item--world .advantages__text {
+  @media (min-width: $desktop-width) {
+    padding: 0 35px;
+  }
+}
+
+.advantages__item--friends .advantages__text {
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 10px;
   }
 }

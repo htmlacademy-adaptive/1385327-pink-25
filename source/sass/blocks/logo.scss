@@ -1,6 +1,23 @@
-.logo img {
+.logo {
+  color: rgb(255, 255, 255);
+}
+
+.logo-icon {
+  width: 74px;
+  height: 23px;
+
   :hover {
     color: $item-accent;
   }
   //:active {rgba(255, 255, 255, 0.3);}
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //width: 147px;
+    width: $desktop-width;
+  }
 }

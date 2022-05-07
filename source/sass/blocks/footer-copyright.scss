@@ -1,13 +1,44 @@
-//.footer-copyright {}
+.footer-copyright {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
+}
 
 .footer-copyright__text {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  align-self: center;
   color: $main-theme;
+  padding-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
-.footer-copyright__link img {
+.footer-copyright__link {
   width: 27px;
   height: 34px;
+  color: $item-accent;
+
+  &:hover {
+    color: $main-theme;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-copyright__link-icon {
+  width: 27px;
+  height: 34px;
+  fill: currentColor;
 }

@@ -24,7 +24,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../../img/blocks/header-intro/screenPhoneDesktop@1x.png");
     background-repeat: no-repeat;
-    background-position-y: 98px;
+    background-position: 145px 98px;
     background-size: 1050px 645px;
 
     @media (min-resolution: 2dppx) {
@@ -33,54 +33,48 @@
   }
 }
 
-.header-intro--inner {
-  background: none;
-}
-
 .header-intro__wrapper {
   height: 667px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 20px;
+  padding-top: 23px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 619px;
-    padding-top: 93px;
-    padding-bottom: 110px;
-    justify-content: center;
+    padding-top: 94px;
+    //padding-bottom: 110px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
     height: 743px;
-    padding-top: 84px;
+    padding-top: 100px;
     padding-bottom: 130px;
     margin-left: 130px;
   }
 }
 
+.header-intro--inner {
+  background: none;
+}
+
 .header-intro--inner .header-intro__wrapper {
   height: 171px;
-  padding-top: 0;
-  padding-bottom: 50px;
-  justify-content: flex-end;
+  padding-top: 30px;
+  justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 70px;
+    padding-top: 66px;
     height: 330px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
     height: 284px;
-    padding-bottom: 100px;
+    padding-top: 60px;
   }
-}
-
-.header-intro--inner .intro-slogan {
-  padding: 0;
 }

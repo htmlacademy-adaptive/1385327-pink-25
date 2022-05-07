@@ -1,16 +1,11 @@
 .contacts {
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 40px;
-  }
+  margin-top: 40px;
 
   @media (min-width: $desktop-width) {
     margin-top: 55px;
   }
 }
 
-//.contacts__wrapper{}
 .contacts__information {
   margin: 10px 20px 10px;
 }
@@ -103,6 +98,18 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 5px;
+  }
+}
+
+.contacts__item--email > .contacts__link {
+  &:hover {
+    color: $main-theme;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $main-theme;
+    opacity: 0.3;
   }
 }
 
