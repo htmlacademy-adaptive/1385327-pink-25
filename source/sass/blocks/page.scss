@@ -15,22 +15,23 @@
   background-position-x: center;
   z-index: -10;
   opacity: 0.5;
-  background-image: url("../../img/perfect/MobileIndex.png");
+  //background-image: url("../../img/perfect/MobileIndex.png");
   //background-image: url("../../img/perfect/MobileMenu.png");
   //background-image: url("../../img/perfect/MobileCatalog.png");
-  //background-image: url("../../img/perfect/MobileForm.png");
+  background-image: url("../../img/perfect/MobileForm.png");
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    background-image: url("../../img/perfect/TabletIndex.png");
+    //background-image: url("../../img/perfect/TabletIndex.png");
+    //background-image: url("../../img/perfect/TabletMenu.png");
     //background-image: url("../../img/perfect/TabletCatalog.png");
-    //background-image: url("../../img/perfect/TabletForm.png");
+    background-image: url("../../img/perfect/TabletForm.png");
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    background-image: url("../../img/perfect/DesktopIndex.png");
+    //background-image: url("../../img/perfect/DesktopIndex.png");
     //background-image: url("../../img/perfect/DesktopCatalog.png");
-    //background-image: url("../../img/perfect/DesktopForm.png");
+    background-image: url("../../img/perfect/DesktopForm.png");
   }
 }

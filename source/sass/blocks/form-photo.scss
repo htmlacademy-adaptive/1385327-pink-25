@@ -1,138 +1,177 @@
 .form-photo {
-  padding-top: 20px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 57px;
-    padding-bottom: 55px;
-  }
-}
-
-.form-photo__wrapper {
   display: grid;
-  grid-template-areas: "photo" "filtersBtn" "filtersRange1" "formBtn";
+  grid-template-rows: 374px auto;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 300px 100px 220px;
-    grid-template-rows: 55px 75px 70px 40px 80px 80px;
-    grid-template-areas:
-      "photo filtersBtn filtersRange1"
-      "photo filtersBtn filtersRange2"
-      "photo filtersBtn filtersRange3"
-      "photo . ."
-      "photo formBtn formBtn"
-      "photo formBtn formBtn";
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 300px 180px auto;
-    grid-template-rows: 55px 75px 70px 40px 80px 80px;
-    grid-template-areas:
-      "photo filtersBtn filtersRange1"
-      "photo filtersBtn filtersRange2"
-      "photo filtersBtn filtersRange3"
-      "photo . ."
-      "photo . ."
-      "photo formBtn formBtn";
+    grid-template-columns: 340px auto;
+    grid-template-rows: 400px;
   }
 }
 
 .form-photo__image {
   width: 280px;
   height: 374px;
-  grid-area: photo;
+  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 400px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.form-photo__wrapper {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "filtersBtn" "filtersRange1" "formBtn";
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 80px 220px;
+    grid-template-rows: 55px 75px 70px 40px 80px 80px;
+    grid-template-areas:
+      "filtersBtn filtersRange1"
+      "filtersBtn filtersRange2"
+      "filtersBtn filtersRange3"
+      ". ."
+      "formBtn formBtn"
+      "formBtn formBtn";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 140px auto;
+    grid-template-rows: 55px 75px 70px 40px 80px 80px;
+    grid-template-areas:
+      "filtersBtn filtersRange1"
+      "filtersBtn filtersRange2"
+      "filtersBtn filtersRange3"
+      ". ."
+      ". ."
+      "formBtn formBtn";
+  }
 }
 
 .form-photo__filters-buttons {
-  padding-top: 35px;
-  padding-left: 22px;
-  padding-right: 28px;
+  margin: 0 20px;
+  padding-top: 43px;
+  padding-left: 16px;
+  padding-right: 22px;
   grid-area: filtersBtn;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "cropBtn fillBtn contBtn";
+  justify-items: center;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
     grid-template-rows: 55px 75px 70px;
     grid-template-areas: "cropBtn" "fillBtn" "contBtn";
     padding: 0;
-    padding-left: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 90px;
+    margin: 0;
   }
 }
 
-.form-photo__button-editor {
+.form-photo__filter-button {
   border: 0;
+  padding: 0;
+  color: $main-theme;
+  opacity: 0.3;
 
-  &:nth-of-type(1) {
-    grid-area: cropBtn;
-
-    @media (min-width: $tablet-width) {
-      width: 22px;
-      height: 22px;
-      margin-top: 10px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 44px;
-      height: 44px;
-    }
+  &:hover {
+    opacity: 0.5;
   }
-
-  &:nth-of-type(2) {
-    grid-area: fillBtn;
-
-    @media (min-width: $tablet-width) {
-      width: 24px;
-      height: 22px;
-      margin-top: 28px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 48px;
-      height: 43px;
-    }
-  }
-
-  &:nth-of-type(3) {
-    grid-area: contBtn;
-
-    @media (min-width: $tablet-width) {
-      width: 16px;
-      height: 16px;
-      margin-top: 25px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 32px;
-      height: 32px;
-    }
-  }
-}
-
-.form-photo__filter {
-  padding-top: 17px;
-  padding-bottom: 27px;
-  width: 240px;
-  margin: 0 auto;
-  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 
   @media (min-width: $tablet-width) {
-    width: 202px;
-    margin: 0;
-    margin-right: auto;
+    border-bottom: 1px solid #000000;
+    width: 80px;
+    color: $item-accent;
+    opacity: 1;
+
+    &:hover {
+      color: #000000;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 288px;
+    width: 140px;
+  }
+
+  &--current {
+    color: $item-accent;
+    opacity: 1;
+  }
+}
+
+.form-photo__icon-crop {
+  grid-area: cropBtn;
+  fill: currentColor;
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.form-photo__icon-fill {
+  grid-area: fillBtn;
+  fill: currentColor;
+  width: 48px;
+  height: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.form-photo__icon-contrast {
+  grid-area: contBtn;
+  fill: currentColor;
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.form-photo__filter {//------------------------------------------------------------------
+  padding: 22px 40px 27px 40px;
+  width: 320px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(40, 54, 69, 1);
+
+  @media (min-width: $tablet-width) {
+    //width: 202px;
+    width: 220px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
   }
 }
 
@@ -166,19 +205,19 @@
   }
 }
 
-.form-photo__buttons {
-  height: 202px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.form-photo__buttons {//--------------------------------------------------------------------------------
+  padding-top: 38px;
+  margin: 0 20px;
   grid-area: formBtn;
   display: grid;
+  grid-gap: 12px;
 
   @media (min-width: $tablet-width) {
     width: 260px;
     margin-left: auto;
     margin-right: 15px;
     padding: 0;
-    grid-template-rows: 80px 80px;
+    grid-template-rows: 80px auto;
   }
 
   @media (min-width: $desktop-width) {

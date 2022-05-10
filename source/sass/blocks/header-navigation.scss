@@ -17,6 +17,7 @@
     justify-content: space-between;
     padding-left: 130px;
     padding-right: 130px;
+    align-items: center;
   }
 }
 
@@ -33,14 +34,22 @@
 
   @media (min-width: $desktop-width) {
     background: none;
+    width: $desktop-width;
   }
 }
 
 .header-navigation__logo {
   height: 66px;
+  padding: 21px 20px 0;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     height: 110px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 0 0;
   }
 }
 
@@ -49,17 +58,6 @@
 
   @media (min-width: $tablet-width) {
     height: 109px;
-  }
-}
-
-.header-navigation__logo img {
-  margin-top: 22px;
-  margin-bottom: 21px;
-  margin-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 27px;
-    margin-bottom: 43px;
   }
 }
 
@@ -73,7 +71,7 @@
   height: 24px;
   cursor: pointer;
   border: none;
-  background: url("../../img/open-menu-btn.png");
+  background: url("../../img/blocks/header-navigation/btnMenuOpen.svg");
 
   @media (min-width: $tablet-width) {
     top: 43px;
@@ -94,7 +92,7 @@
   height: 23px;
   cursor: pointer;
   border: none;
-  background: url("../../img/close-menu-btn.png");
+  background: url("../../img/blocks/header-navigation/btnMunuClose.svg");
 
   @media (min-width: $tablet-width) {
     top: 43px;
@@ -145,27 +143,38 @@
     border: none;
     height: 110px;
     width: auto;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
   }
 }
 
 .header-navigation__link {
   color: rgb(255, 255, 255);
   font-size: 18px;
-  line-height: 32px;
+  line-height: 64px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
   text-align: center;
-  padding-top: 15px;
 
   @media (min-width: $desktop-width) {
-    line-height: 18px;
+    line-height: 110px;
     font-weight: 400;
     text-transform: none;
-    padding-left: 79px;
-    padding-top: 48px;
-    text-align: right;
+
+    &--current::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 34px;
+      height: 2px;
+      background-color: rgb(255, 255, 255);
+    }
   }
 }
 
@@ -184,6 +193,15 @@
   position: absolute;
   top: 0;
   width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    width: $desktop-width;
+  }
 }
 
 .header-navigation--nojs .header-navigation__logo {

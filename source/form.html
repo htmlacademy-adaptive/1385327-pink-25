@@ -7,7 +7,7 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./img/favicon/faveiconApple180.png">
-  <link rel="manifest" href="./manifest.webmanifest.json">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -22,7 +22,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logotype/logotypeHeaderDesktop.svg">
               <source media="(min-width: 660px)" srcset="./img/logotype/logotypeHeaderTablet.svg">
-              <img src="./img/logotype/logotypeHeader.svg" width="74" height="23" alt="Логотип Pink">
+              <img class="logo-icon" src="./img/logotype/logotypeHeader.svg" width="74" height="23" alt="Логотип Pink">
             </picture>
           </a>
 
@@ -37,8 +37,8 @@
             <li class="header-navigation__item">
               <a class="header-navigation__link" href="catalog.html">Фотографии</a>
             </li>
-            <li class="header-navigation__item header-navigation__item--current">
-              <a class="header-navigation__link" href="form.html">Конкурс</a>
+            <li class="header-navigation__item">
+              <a class="header-navigation__link header-navigation__link--current" href="form.html">Конкурс</a>
             </li>
             <li class="header-navigation__item">
               <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -59,7 +59,7 @@
 
     <div class="form-information information">
       <p class="information__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту!<br><span>Пожалуйста, заполните форму ниже:</span></p>
+        бонусную карту!<br><span> Пожалуйста, заполните форму ниже:</span></p>
     </div>
 
     <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="post">
@@ -185,7 +185,7 @@
 
       <div class="form-feedback__submit form-feedback__submit-wrapper">
         <button class="form-feedback__button button" type="submit">Отправить форму</button>
-        <p class="form-feedback__notification">* — обязательные <span> для заполнения</span> поля</p>
+        <p class="form-feedback__notification"><span class="form-feedback__notification-asterix">*</span> — обязательные <span class="form-feedback__notification-hidden"> для заполнения</span> поля</p>
       </div>
     </form>
   </main>

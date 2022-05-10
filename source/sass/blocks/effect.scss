@@ -3,7 +3,7 @@
     display: none;
   }
   background-color: $background;
-  background-image: url("../../img/effectTable.svg");
+  background-image: url("../../img/blocks/effect/effect.svg");
   background-repeat: no-repeat;
   background-size: 238px 276px;
   background-position: 20px 90%;
@@ -16,7 +16,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 130px;
     padding-right: 130px;
-    //background-image: url("../../img/effectDesktop.svg");
     background-size: 298px 345px;
     background-position: 130px 14px;
     height: 429px;

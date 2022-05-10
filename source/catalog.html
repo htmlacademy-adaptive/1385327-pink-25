@@ -7,7 +7,7 @@
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./img/favicon/faveiconApple180.png">
-  <link rel="manifest" href="./manifest.webmanifest.json">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -16,41 +16,41 @@
 
   <header class="main-header">
 
-      <nav class="header-navigation header-navigation--closed header-navigation--nojs">
-        <div class="header-navigation__wrapper">
-          <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="./img/logotype/logotypeHeaderDesktop.svg">
-              <source media="(min-width: 660px)" srcset="./img/logotype/logotypeHeaderTablet.svg">
-              <img src="./img/logotype/logotypeHeader.svg" width="74" height="23" alt="Логотип Pink">
-            </picture>
-          </a>
+    <nav class="header-navigation header-navigation--closed header-navigation--nojs">
+      <div class="header-navigation__wrapper">
+        <a class="header-navigation__logo logo" href="#" title="Фотосервис PINK">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logotype/logotypeHeaderDesktop.svg">
+            <source media="(min-width: 660px)" srcset="./img/logotype/logotypeHeaderTablet.svg">
+            <img class="logo-icon" src="./img/logotype/logotypeHeader.svg" width="74" height="23" alt="Логотип Pink">
+          </picture>
+        </a>
 
-          <button class="header-navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <button class="header-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-          <ul class="header-navigation__items">
-            <li class="header-navigation__item ">
-              <a class="header-navigation__link" href="index.html">Главная</a>
-            </li>
-            <li class="header-navigation__item header-navigation__item--current">
-              <a class="header-navigation__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="header-navigation__item">
-              <a class="header-navigation__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="header-navigation__item">
-              <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="header-intro header-intro--inner">
-        <div class="header-intro__wrapper">
-          <p class="intro-slogan intro-slogan--inner">Фотографии<br>пользователей</p>
-        </div>
+        <ul class="header-navigation__items">
+          <li class="header-navigation__item ">
+            <a class="header-navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link header-navigation__link--current" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="header-navigation__item">
+            <a class="header-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </div>
+    </nav>
+    <div class="header-intro header-intro--inner">
+      <div class="header-intro__wrapper">
+        <p class="intro-slogan intro-slogan--inner">Фотографии<br>пользователей</p>
+      </div>
+    </div>
 
   </header>
 
@@ -58,46 +58,47 @@
     <h1 class="visually-hidden">Каталог фотографий пользователей</h1>
 
     <div class="catalog-information information">
-      <p class="information__title">Взгляни на фоторгафии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+      <p class="information__title">Взгляните на фоторгафии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
     </div>
 
     <section class="gallery">
       <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
 
-      <figure class="photo photo--panorama">
-        <a class="photo__link" href="#">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/catalog/panoramaDesktop@1x.jpg 1x, img/catalog/panoramaDesktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-              srcset="img/catalog/panoramaTablet@1x.jpg 1x, img/catalog/panoramaTablet@2x.jpg 2x">
-            <img src="img/catalog/panoramaMobile@1x.jpg"
-              srcset="img/catalog/panoramaMobile@2x.jpg 2x" alt="Панорама дня. Автор Анна.">
-          </picture>
-        </a>
-        <span class="photo__name">Панорама дня</span>
+      <div class="gallery__panorama">
+        <figure class="photo photo--panorama">
+          <a class="photo__link" href="#" data-label="Панорама дня">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/panoramaDesktop@1x.jpg 1x, img/catalog/panoramaDesktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/catalog/panoramaTablet@1x.jpg 1x, img/catalog/panoramaTablet@2x.jpg 2x">
+              <img src="img/catalog/panoramaMobile@1x.jpg"
+                srcset="img/catalog/panoramaMobile@2x.jpg 2x" alt="Панорама дня. Автор Анна.">
+            </picture>
+          </a>
 
-        <figcaption class="photo__info photo__info--panorama">
-          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
+          <figcaption class="photo__info photo__info--panorama">
+            <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
 
-          <div class="photo__author">
-            <p class="photo__author-name">Анна</p>
-            <time class="photo__author-date" datetime="2022-04-03T11:00">(5 минут назад)</time>
-          </div>
+            <div class="photo__author">
+              <p class="photo__author-name">Анна</p>
+              <time class="photo__author-date" datetime="2022-04-03T11:00">(5 минут назад)</time>
+            </div>
 
-          <div class="photo__statistic">
-            <button class="photo__statistic-button" type="button">
-              <svg class="photo__statistic-icon" width="13" height="12">
-                <use xlink:href="img/sprite.svg#catalogHeart"></use>
-              </svg>
-            </button>
-            <span class="photo__statistic-text">Нравится: 215</span>
-          </div>
-        </figcaption>
-      </figure>
+            <div class="photo__statistic">
+              <button class="photo__statistic-button" type="button">
+                <svg class="photo__statistic-icon" width="13" height="12">
+                  <use xlink:href="img/sprite.svg#catalogHeart"></use>
+                </svg>
+              </button>
+              <span class="photo__statistic-text">Нравится: 215</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
 
-      <div class="gallery__wrapper">
+      <div class="gallery__photo">
 
         <figure class="photo photo--gallery">
           <a class="photo__link" href="#">
@@ -275,58 +276,59 @@
     </div>
 
     <section class="photo-editor">
-
       <h2 class="visually-hidden">Фоторедактор</h2>
+
       <form class="form-photo" action="https://echo.htmlacademy.ru">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/catalog/photoRoadDesktop@1x.jpg 1x, img/catalog/photoRoadDesktop@2x.jpg 2x">
+          <source media="(min-width: 660px)"
+            srcset="img/catalog/photoRoadTablet@1x.jpg 1x, img/catalog/photoRoadTablet@2x.jpg 2x">
+          <img class="form-photo__image" src="img/catalog/photoRoadMobile@1x.jpg"
+            srcset="img/catalog/photoRoadMobile@2x.jpg 2x" alt="Фотография для редактирования. Фотография зимней дороги в лесу.">
+        </picture>
+
         <div class="form-photo__wrapper">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/catalog/photoRoadDesktop@1x.jpg 1x, img/catalog/photoRoadDesktop@2x.jpg 2x">
-              <source media="(min-width: 660px)"
-                srcset="img/catalog/photoRoadTablet@1x.jpg 1x, img/catalog/photoRoadTablet@2x.jpg 2x">
-              <img class="form-photo__image" src="img/catalog/photoRoadMobile@1x.jpg"
-                srcset="img/catalog/photoRoadMobile@2x.jpg 2x" alt="Фотография для редактирования. Фотография зимней дороги в лесу.">
-            </picture>
 
           <div class="form-photo__filters-buttons">
-
-            <button class="form-photo__button-editor" type="button">
-              <svg class="form-photo__button-icon" width="44" height="44" alt="crop">
-                <use xlink:href="img/sprite.svg#catalogCrop"></use>
+            <button class="form-photo__filter-button form-photo__filter-button--current" type="button">
+              <svg class="form-photo__icon-crop" width="44" height="44" alt="crop">
+                <use xlink:href="./img/sprite.svg#catalogCrop"></use>
               </svg>
             </button>
 
-            <button class="form-photo__button-editor" type="button">
-              <svg class="form-photo__button-icon" width="48" height="43" alt="fill">
-                <use xlink:href="img/sprite.svg#catalogFill"></use>
+            <button class="form-photo__filter-button" type="button">
+              <svg class="form-photo__icon-fill" width="48" height="44" alt="fill">
+                <use xlink:href="./img/sprite.svg#catalogFills"></use>
               </svg>
             </button>
 
-            <button class="form-photo__button-editor" type="button">
-              <svg class="form-photo__button-icon" width="32" height="32" alt="contrast">
-                <use xlink:href="img/sprite.svg#catalogContrast"></use>
+            <button class="form-photo__filter-button" type="button">
+              <svg class="form-photo__icon-contrast" width="32" height="32" alt="contrast">
+                <use xlink:href="./img/sprite.svg#catalogContrast"></use>
               </svg>
             </button>
           </div>
-            <div class="form-photo__filter form-photo__filter-crop">
-              <input id="crop" type="range" name="crop" min="0" max="100" value="85" step="1">
-              <label class="visually-hidden" for="crop">Обрезка</label>
-            </div>
 
-            <div class=" form-photo__filter form-photo__filter-fill">
-              <input id="fill" type="range" name="fill" min="0" max="100" value="12" step="1">
-              <label class="visually-hidden" for="fill">Заливка</label>
-            </div>
+          <div class="form-photo__filter form-photo__filter-crop">
+            <input id="crop" type="range" name="crop" min="0" max="100" value="85" step="1">
+            <label class="visually-hidden" for="crop">Обрезка</label>
+          </div>
 
-            <div class="form-photo__filter form-photo__filter-contrast">
-              <input id="contrast" type="range" name="contrast" min="0" max="100" value="50" step="1">
-              <label class="visually-hidden" for="contrast">Контрастность</label>
-            </div>
+          <div class="form-photo__filter form-photo__filter-fill">
+            <input id="fill" type="range" name="fill" min="0" max="100" value="12" step="1">
+            <label class="visually-hidden" for="fill">Заливка</label>
+          </div>
 
-            <div class="form-photo__buttons">
-              <button class="form-photo__button button form-photo__button--submit" type="submit">Запостить</button>
-              <button class="form-photo__button button form-photo__button--reset" type="reset">Отмена</button>
-            </div>
+          <div class="form-photo__filter form-photo__filter-contrast">
+            <input id="contrast" type="range" name="contrast" min="0" max="100" value="50" step="1">
+            <label class="visually-hidden" for="contrast">Контрастность</label>
+          </div>
+
+          <div class="form-photo__buttons">
+            <button class="form-photo__button button form-photo__button--submit" type="submit">Запостить</button>
+            <button class="form-photo__button button form-photo__button--reset" type="reset">Отмена</button>
+          </div>
 
         </div>
       </form>

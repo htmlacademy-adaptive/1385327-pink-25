@@ -9,7 +9,10 @@
   :hover {
     color: $item-accent;
   }
-  //:active {rgba(255, 255, 255, 0.3);}
+
+  :active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 145px;
@@ -17,7 +20,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    //width: 147px;
-    width: $desktop-width;
+    width: 147px;
   }
 }

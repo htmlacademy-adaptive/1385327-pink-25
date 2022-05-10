@@ -1,12 +1,16 @@
 .photo-editor {
   background-color: $background;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
-    padding-right: 60px;
+    padding: 60px 60px 56px 80px;
     margin-left: 130px;
     margin-right: 130px;
+    margin-bottom: 30px;
   }
 }
