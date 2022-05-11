@@ -1,25 +1,45 @@
-.logo {
-  color: rgb(255, 255, 255);
-}
+// .logo {}
 
 .logo-icon {
-  width: 74px;
-  height: 23px;
+  color: currentColor;
+}
 
-  :hover {
-    color: $item-accent;
+.logo-icon-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
+}
 
-  :active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+.logo-icon-tablet {
+  display: none;
 
   @media (min-width: $tablet-width) {
-    width: 145px;
-    height: 40px;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
-    width: 147px;
+    display: none;
+  }
+}
+
+.logo-icon-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo-icon-footer {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo-icon-footerDesktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

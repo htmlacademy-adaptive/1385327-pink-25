@@ -42,6 +42,16 @@
   height: 66px;
   padding: 21px 20px 0;
   margin-right: auto;
+  color: rgb(255, 255, 255);
+
+  &:hover {
+    color: $item-accent;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255);
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     height: 110px;
@@ -71,7 +81,27 @@
   height: 24px;
   cursor: pointer;
   border: none;
+  //background-color: transparent;
   background: url("../../img/blocks/header-navigation/btnMenuOpen.svg");
+
+  &:hover {
+    background: url("../../img/blocks/header-navigation/btnMenuOpenHover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 50px;
+  //   height: 4px;
+  //   background-color: rgb(255, 255, 255);
+  //   box-shadow: 0 10px 0 0 rgb(255, 255, 255), 0 20px 0 0 rgb(255, 255, 255);
+  // }
 
   @media (min-width: $tablet-width) {
     top: 43px;
@@ -92,7 +122,39 @@
   height: 23px;
   cursor: pointer;
   border: none;
-  background: url("../../img/blocks/header-navigation/btnMunuClose.svg");
+  //background-color: transparent;
+  background: url("../../img/blocks/header-navigation/btnMenuClose.svg");
+
+  &:hover {
+    background: url("../../img/blocks/header-navigation/btnMenuCloseHover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 10px;
+  //   right: -3px;
+  //   width: 30px;
+  //   height: 3px;
+  //   background-color: rgb(255, 255, 255);
+  //   transform: rotate(45deg);
+  //   box-shadow: none;
+  // }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 10px;
+  //   right: -4px;
+  //   width: 30px;
+  //   height: 3px;
+  //   background-color: rgb(255, 255, 255);
+  //   transform: rotate(-45deg);
+  // }
 
   @media (min-width: $tablet-width) {
     top: 43px;
