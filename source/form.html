@@ -91,17 +91,17 @@
           <ul class="form-feedback__list">
             <li class="form-feedback__name-item">
               <label class="form-feedback__label" for="lastname">Фамилия:</label>
-              <input class="form-feedback__input" type="text" id="lastname" name="lastname"
+              <input class="form-feedback__input" type="text" id="lastname" name="lastname" pattern="^[A-Za-zА-Яа-яЁё]+$"
                 placeholder="Укажите фамилию *" required>
             </li>
             <li class="form-feedback__name-item">
               <label class="form-feedback__label" for="firstname">Имя:</label>
-              <input class="form-feedback__input" type="text" id="firstname" name="firstname"
+              <input class="form-feedback__input" type="text" id="firstname" name="firstname" pattern="^[A-Za-zА-Яа-яЁё]+$"
                 placeholder="Введите ваше имя *" required>
             </li>
             <li class="form-feedback__name-item">
               <label class="form-feedback__label" for="middlename">Отчество:</label>
-              <input class="form-feedback__input" type="text" id="middlename" name="middlename"
+              <input class="form-feedback__input" type="text" id="middlename" name="middlename" pattern="^[A-Za-zА-Яа-яЁё]+$"
                 placeholder="Ну и отчество тоже">
             </li>
           </ul>
@@ -158,7 +158,7 @@
           <ul class="form-feedback__list form-feedback__list--row">
             <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--phone">
               <label class="form-feedback__label form-feedback__label--contacts" for="phone">Номер телефона</label>
-              <input class="form-feedback__input form-feedback__input--contacts" type="tel" id="phone" name="phone"
+              <input class="form-feedback__input form-feedback__input--contacts" type="tel" id="phone" name="phone" pattern="[0-9]{11}"
                 placeholder="Номер, пожалуйста">
             </li>
             <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--email">
