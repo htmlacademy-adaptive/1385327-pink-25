@@ -1,3 +1,20 @@
 .footer-logo {
   color: $main-theme;
+
+  &:hover {
+    color: $item-accent;
+  }
+
+  &:active {
+    color: $main-theme;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+  }
 }

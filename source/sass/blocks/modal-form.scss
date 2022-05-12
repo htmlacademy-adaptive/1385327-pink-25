@@ -166,4 +166,12 @@
   background-color: rgb(42, 171, 109);
   border: 2px solid rgb(42, 171, 109);
   border-radius: 1px;
+
+  &:hover {
+    background-color: rgb(28, 155, 94);
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

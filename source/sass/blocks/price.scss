@@ -1,7 +1,7 @@
 .price {
   background-color: $background;
   position: relative;
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 32px;
   overflow: hidden;
 
@@ -54,7 +54,7 @@
 
 .price__toggles.slider-dot__toggles {
   padding-top: 46px;
-  padding-bottom: 52px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;

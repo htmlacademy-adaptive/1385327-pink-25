@@ -4,12 +4,15 @@
   height: 271px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     height: auto;
     background-color: transparent;
     justify-content: space-between;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,6 +29,10 @@
   color: rgb(255, 255, 255);
   border-radius: 29px;
 
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+
   &:hover {
     color: $item-accent;
     background: rgb(255, 255, 255);
@@ -40,17 +47,22 @@
 .intro-content__webstores {
   margin: 0;
   padding: 0;
+  margin-top: 7px;
   display: flex;
   justify-content: space-evenly;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 38px;
+    padding-bottom: 31px;
+    padding-left: 44px;
+    padding-right: 50px;
+    margin-top: 0;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 67px;
-    padding-bottom: 47px;
+    padding-bottom: 53px;
   }
 }
 
@@ -61,9 +73,7 @@
 
 .intro-content__link {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  width: 56px;
   height: 56px;
 }
 

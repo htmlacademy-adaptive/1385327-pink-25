@@ -1,6 +1,45 @@
-.logo img {
-  :hover {
-    color: $item-accent;
+// .logo {}
+
+.logo-icon {
+  color: currentColor;
+}
+
+.logo-icon-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
-  //:active {rgba(255, 255, 255, 0.3);}
+}
+
+.logo-icon-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo-icon-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo-icon-footer {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo-icon-footerDesktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

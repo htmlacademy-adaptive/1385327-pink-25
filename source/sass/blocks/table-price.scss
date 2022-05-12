@@ -10,7 +10,6 @@
     width: 940px;
   }
 }
-// .table-price__wrapper{}
 
 .table-price__header {
   background-color: $main-theme;
@@ -18,15 +17,15 @@
   border: 2px solid $main-theme;
   position: relative;
   padding-top: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 12px;
-    padding-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 15px;
+    padding-top: 16px;
     padding-bottom: 20px;
   }
 }
@@ -46,12 +45,20 @@
 }
 
 .table-price__header--hit {
-  background-image: url("../../img/hitMobile.svg");
-  background-position: 0 0;
+  background-image: url("../../img/blocks/price/priceHit.svg");
+  background-position: -2px -2px;
   background-repeat: no-repeat;
   background-size: 74px 74px;
   border-left-color: #f2f2f2;
   border-right-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-size: 61px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 74px 74px;
+  }
 }
 
 .table-price__header--hit::before {
@@ -63,8 +70,18 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
-  top: 17px;
+  top: 13px;
   left: 12px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 14px;
+    left: 14px;
+  }
 }
 
 .table-price__product-type {
@@ -83,12 +100,13 @@
 .table-price__product-price {
   display: block;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 300;
   align-items: center;
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -100,10 +118,10 @@
   text-transform: uppercase;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(229, 229, 229);
-  padding: 15px 18px 14px 22px;
+  padding: 15px 14px 14px 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 7px 10px 8px;
+    padding: 7px 15px 8px;
     width: 25%;
     text-transform: none;
   }
@@ -152,13 +170,13 @@
 }
 
 .table-price__feature-value--true {
-  background: url("../../img/yes.svg");
+  background: url("../../img/blocks/price/priceYes.svg");
   width: 31px;
   height: 21px;
 }
 
 .table-price__feature-value--false {
-  background: url("../../img/no.svg");
+  background: url("../../img/blocks/price/priceNo.svg");
   width: 27px;
   height: 27px;
 }
