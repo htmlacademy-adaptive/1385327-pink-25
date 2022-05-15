@@ -347,7 +347,7 @@ input[type="checkbox"]:checked + .form-feedback__label-checkbox::after {
       height: 59px;
       top: 27px;
       right: 60px;
-      background-image: url("../../img/blocks/form-feedback/iconPhone.svg");
+      background-image: url("./../img/blocks/form-feedback/iconPhone.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $desktop-width) {
@@ -394,7 +394,7 @@ input[type="checkbox"]:checked + .form-feedback__label-checkbox::after {
       height: 59px;
       top: 27px;
       right: 60px;
-      background-image: url("../../img/blocks/form-feedback/iconMail.svg");
+      background-image: url("./../img/blocks/form-feedback/iconMail.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $desktop-width) {
@@ -512,8 +512,8 @@ input[type="radio"]:active + .form-feedback__label-radio::before {
 input[type="radio"]:checked + .form-feedback__label-radio::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 12px;
+  top: 5px;
+  left: 13px;
   width: 15px;
   height: 15px;
   border-radius: 50%;

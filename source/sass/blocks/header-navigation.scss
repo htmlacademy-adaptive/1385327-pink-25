@@ -83,10 +83,10 @@
   cursor: pointer;
   border: none;
   //background-color: transparent;
-  background: url("../../img/blocks/header-navigation/btnMenuOpen.svg");
+  background: url("./../img/blocks/header-navigation/btnMenuOpen.svg");
 
   &:hover {
-    background: url("../../img/blocks/header-navigation/btnMenuOpenHover.svg");
+    background: url("./../img/blocks/header-navigation/btnMenuOpenHover.svg");
   }
 
   &:active {
@@ -113,10 +113,10 @@
   cursor: pointer;
   border: none;
   //background-color: transparent;
-  background: url("../../img/blocks/header-navigation/btnMenuClose.svg");
+  background: url("./../img/blocks/header-navigation/btnMenuClose.svg");
 
   &:hover {
-    background: url("../../img/blocks/header-navigation/btnMenuCloseHover.svg");
+    background: url("./../img/blocks/header-navigation/btnMenuCloseHover.svg");
   }
 
   &:active {
