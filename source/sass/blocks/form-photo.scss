@@ -77,31 +77,33 @@
 .form-photo__filter-button {
   border: 0;
   padding: 0;
-  color: $main-theme;
-  opacity: 0.3;
+  background-color: transparent;
+  color: rgba(40, 54, 69, 0.3);
 
   &:hover {
-    opacity: 0.5;
+    color: rgba(40, 54, 69, 0.5);
   }
 
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
     width: 80px;
     color: $item-accent;
-    opacity: 1;
 
     &:hover {
-      color: #000000;
+      color: rgba(40, 54, 69, 0.5);
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 140px;
+
+    &:last-child {
+      border-color: transparent;
+    }
   }
 
   &--current {
     color: $item-accent;
-    opacity: 1;
   }
 }
 
@@ -162,7 +164,7 @@
   padding: 22px 40px 27px 40px;
   width: 320px;
   margin: 0 auto;
-  border-bottom: 1px solid rgba(40, 54, 69, 1);
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 
   @media (min-width: $tablet-width) {
     //width: 202px;
@@ -202,6 +204,10 @@
   @media (min-width: $tablet-width) {
     display: block;
     padding-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-color: transparent;
   }
 }
 
@@ -276,13 +282,14 @@
     background-color: rgba(40, 54, 69, 0.3);
   }
 }
-
-input[type="range"] {/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+input[type="range"] {
   width: 240px;
   // -webkit-appearance: none;
   // -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     width: 202px;
@@ -304,7 +311,8 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   width: 14px;
   height: 14px;
-  //-webkit-appearance: none;
+  appearance: none;
+  // -webkit-appearance: none;
   margin-top: -7px;
 }
 
