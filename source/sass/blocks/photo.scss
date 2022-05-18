@@ -2,27 +2,35 @@
   margin: 0;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
 }
 
 .photo--panorama {
   width: 320px;
   position: relative;
+  grid-template-rows: 137px auto;
 
   @media (min-width: $tablet-width) {
     width: 660px;
+    grid-template-rows: 509px auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    grid-template-rows: 506px auto;
   }
 }
 
 .photo--gallery {
   width: 280px;
+  grid-template-rows: 180px auto;
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    grid-template-rows: 300px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 400px auto;
   }
 }
 
@@ -134,7 +142,7 @@
   line-height: 24px;
   font-weight: 300;
   color: $main-theme;
-  align-self: flex-end;
+  //align-self: flex-end;
   text-transform: uppercase;
   padding-left: 3px;
 }

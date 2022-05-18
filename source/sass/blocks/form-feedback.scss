@@ -347,7 +347,7 @@ input[type="checkbox"]:checked + .form-feedback__label-checkbox::after {
       height: 59px;
       top: 27px;
       right: 60px;
-      background-image: url("../../img/blocks/form-feedback/iconPhone.svg");
+      background-image: url("./../img/blocks/form-feedback/iconPhone.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $desktop-width) {
@@ -394,7 +394,7 @@ input[type="checkbox"]:checked + .form-feedback__label-checkbox::after {
       height: 59px;
       top: 27px;
       right: 60px;
-      background-image: url("../../img/blocks/form-feedback/iconMail.svg");
+      background-image: url("./../img/blocks/form-feedback/iconMail.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $desktop-width) {
@@ -512,8 +512,8 @@ input[type="radio"]:active + .form-feedback__label-radio::before {
 input[type="radio"]:checked + .form-feedback__label-radio::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 11px;
+  top: 5px;
+  left: 13px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -564,10 +564,10 @@ input[type="radio"]:checked + .form-feedback__label-radio::after {
   min-height: 200px;
   width: 100%;
   padding-left: 20px;
-  padding-top: 9px;
+  padding-top: 10px;
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
 
   @media (min-width: $tablet-width) {
     margin: 17px 60px;
@@ -579,6 +579,7 @@ input[type="radio"]:checked + .form-feedback__label-radio::after {
     width: 820px;
     min-height: 128px;
     margin-top: 13px;
+    padding-top: 15px;
   }
 }
 

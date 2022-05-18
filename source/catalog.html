@@ -8,7 +8,7 @@
   <link rel="icon" href="./img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./img/favicon/faveiconApple180.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -80,7 +80,7 @@
     <h1 class="visually-hidden">Каталог фотографий пользователей</h1>
 
     <div class="catalog-information information">
-      <p class="information__title">Взгляните на фоторгафии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
+      <p class="information__title"><span>Взгляните на фоторгафии, которые выкладывают пользователи!&nbsp;</span><br><span>Видите, как не хватает ваших?</span></p>
     </div>
 
     <section class="gallery">
@@ -107,7 +107,7 @@
           </a>
 
           <figcaption class="photo__info photo__info--panorama">
-            <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+            <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в
               перископе, задавайте свои вопросы!</p>
 
             <div class="photo__author">
@@ -132,6 +132,13 @@
         <figure class="photo photo--gallery">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog/photoCarDesktop@1x.webp 1x, img/content/photoCarDesktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/catalog/photoCarTablet@1x.webp 1x, img/catalog/photoCarTablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/photoCarMobile@1x.webp 1x, img/catalog/photoCarMobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/photoCarDesktop@1x.jpg 1x, img/catalog/photoCarDesktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -160,6 +167,13 @@
         <figure class="photo photo--gallery">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog/photoDrumsetDesktop@1x.webp 1x, img/content/photoDrumsetDesktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/catalog/photoDrumsetTablet@1x.webp 1x, img/catalog/photoDrumsetTablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/photoDrumsetMobile@1x.webp 1x, img/catalog/photoDrumsetMobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/photoDrumsetDesktop@1x.jpg 1x, img/catalog/photoDrumsetDesktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -188,6 +202,13 @@
         <figure class="photo photo--gallery">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog/photoWindowDesktop@1x.webp 1x, img/content/photoWindowDesktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/catalog/photoWindowTablet@1x.webp 1x, img/catalog/photoWindowTablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/photoWindowMobile@1x.webp 1x, img/catalog/photoWindowMobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/photoWindowDesktop@1x.jpg 1x, img/catalog/photoWindowDesktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -216,6 +237,13 @@
         <figure class="photo photo--gallery">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog/photoMarketDesktop@1x.webp 1x, img/content/photoMarketDesktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/catalog/photoMarketTablet@1x.webp 1x, img/catalog/photoMarketTablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/photoMarketMobile@1x.webp 1x, img/catalog/photoMarketMobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/photoMarketDesktop@1x.jpg 1x, img/catalog/photoMarketDesktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -244,6 +272,13 @@
         <figure class="photo photo--gallery">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog/photoSlopeDesktop@1x.webp 1x, img/content/photoSlopeDesktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/catalog/photoSlopeTablet@1x.webp 1x, img/catalog/photoSlopeTablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/photoSlopeMobile@1x.webp 1x, img/catalog/photoSlopeMobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/photoSlopeDesktop@1x.jpg 1x, img/catalog/photoSlopeDesktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -272,6 +307,13 @@
         <figure class="photo photo--gallery">
           <a class="photo__link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog/photoWingDesktop@1x.webp 1x, img/content/photoWingDesktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/catalog/photoWingTablet@1x.webp 1x, img/catalog/photoWingTablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog/photoWingMobile@1x.webp 1x, img/catalog/photoWingMobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)"
                 srcset="img/catalog/photoWingDesktop@1x.jpg 1x, img/catalog/photoWingDesktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -309,6 +351,13 @@
 
       <form class="form-photo" action="https://echo.htmlacademy.ru">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/catalog/photoRoadDesktop@1x.webp 1x, img/content/photoRoadDesktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/catalog/photoRoadTablet@1x.webp 1x, img/catalog/photoRoadTablet@2x.webp 2x">
+          <source type="image/webp"
+                srcset="img/catalog/photoRoadMobile@1x.webp 1x, img/catalog/photoRoadMobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)"
             srcset="img/catalog/photoRoadDesktop@1x.jpg 1x, img/catalog/photoRoadDesktop@2x.jpg 2x">
           <source media="(min-width: 660px)"

@@ -3,7 +3,7 @@
     display: none;
   }
   background-color: $background;
-  background-image: url("../../img/blocks/effect/effect.svg");
+  background-image: url("./../img/blocks/effect/effect.svg");
   background-repeat: no-repeat;
   background-size: 238px 276px;
   background-position: 20px 90%;
@@ -29,9 +29,11 @@
   align-items: flex-start;
   width: 320px;
   padding-left: 10px;
+  padding-right: 10px;
 
   @media (min-width: $desktop-width) {
     width: 580px;
+    padding-right: 25px;
   }
 }
 

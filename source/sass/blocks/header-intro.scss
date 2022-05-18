@@ -1,5 +1,5 @@
 .header-intro {
-  background-image: url("../../img/blocks/header-intro/screenPhoneMobile@1x.png");
+  background-image: url("./../img/blocks/header-intro/screenPhoneMobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 110px;
@@ -7,28 +7,28 @@
   justify-content: flex-end;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/blocks/header-intro/screenPhoneMobile@2x.png");
+    background-image: url("./../img/blocks/header-intro/screenPhoneMobile@2x.png");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/blocks/header-intro/screenPhoneTablet@1x.png");
+    background-image: url("./../img/blocks/header-intro/screenPhoneTablet@1x.png");
     background-repeat: no-repeat;
     background-position-y: 74px;
     background-size: 660px 545px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/blocks/header-intro/screenPhoneTablet@2x.png");
+      background-image: url("./../img/blocks/header-intro/screenPhoneTablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/blocks/header-intro/screenPhoneDesktop@1x.png");
+    background-image: url("./../img/blocks/header-intro/screenPhoneDesktop@1x.png");
     background-repeat: no-repeat;
     background-position: 145px 98px;
     background-size: 1050px 645px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/blocks/header-intro/screenPhoneDesktop@2x.png");
+      background-image: url("./../img/blocks/header-intro/screenPhoneDesktop@2x.png");
     }
   }
 }

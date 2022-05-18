@@ -49,6 +49,7 @@
   padding: 0;
   margin-top: 7px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 
   @media (min-width: $tablet-width) {

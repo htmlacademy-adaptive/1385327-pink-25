@@ -45,7 +45,7 @@
 }
 
 .table-price__header--hit {
-  background-image: url("../../img/blocks/price/priceHit.svg");
+  background-image: url("./../img/blocks/price/priceHit.svg");
   background-position: -2px -2px;
   background-repeat: no-repeat;
   background-size: 74px 74px;
@@ -170,13 +170,13 @@
 }
 
 .table-price__feature-value--true {
-  background: url("../../img/blocks/price/priceYes.svg");
+  background: url("./../img/blocks/price/priceYes.svg");
   width: 31px;
   height: 21px;
 }
 
 .table-price__feature-value--false {
-  background: url("../../img/blocks/price/priceNo.svg");
+  background: url("./../img/blocks/price/priceNo.svg");
   width: 27px;
   height: 27px;
 }
