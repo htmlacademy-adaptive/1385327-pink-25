@@ -14,9 +14,9 @@ navToggle.addEventListener('click', function () {
 });
 
 let formFeedback = document.querySelector('.form-feedback');
-let lastname = formFeedback.querySelector('#lastname');
-let firstname = formFeedback.querySelector('#firstname');
-let email = formFeedback.querySelector('#email');
+let lastname = document.getElementById('lastname');
+let firstname = document.getElementById('firstname');
+let email = document.getElementById('email');
 let feedbackButton = formFeedback.querySelector('.form-feedback__button');
 
 let error = document.querySelector('.modal-form--error');
