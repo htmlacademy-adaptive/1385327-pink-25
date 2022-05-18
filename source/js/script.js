@@ -43,4 +43,5 @@ successBtn.addEventListener('click', function (evt) {
   success.classList.remove('modal-form--show');
   formFeedback.action = "https://echo.htmlacademy.ru/";
   formFeedback.submit();
+  formFeedback.reset();
 });
