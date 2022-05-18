@@ -21,7 +21,7 @@
   }
 }
 
-.form-information span {
+.form-information span:last-child {
   display: none;
 
   @media (min-width: $tablet-width) {
