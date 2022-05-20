@@ -5,13 +5,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
+  display: none;
 
-  &--error {
-    display: none;
-  }
+  // &--error {
+  //   display: none;
+  // }
 
-  &--success {
-    display: none;
+  // &--success {
+  //   display: none;
+  // }
+
+  &--show {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
