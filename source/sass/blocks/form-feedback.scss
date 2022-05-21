@@ -148,22 +148,34 @@
   color: $main-theme;
   min-height: 63px;
   font-family: "Open Sans", "Arial", sans-serif;
-}
-
-input[type="text"] {
   border: 2px solid rgb(229, 229, 229);
   outline: none;
   width: 100%;
   padding-left: 20px;
+
+  &:hover {
+    border-color: $main-theme;
+  }
+
+  &:focus {
+    border-color: $item-accent;
+  }
 }
 
-input[type="text"]:hover {
-  border-color: $main-theme;
-}
+// input[type="text"] {
+//   border: 2px solid rgb(229, 229, 229);
+//   outline: none;
+//   width: 100%;
+//   padding-left: 20px;
+// }
 
-input[type="text"]:focus {
-  border-color: $item-accent;
-}
+// input[type="text"]:hover {
+//   border-color: $main-theme;
+// }
+
+// input[type="text"]:focus {
+//   border-color: $item-accent;
+// }
 
 .form-feedback__achivments {/*-------------------------------------------------------------------------*/
   background-color: $background;
