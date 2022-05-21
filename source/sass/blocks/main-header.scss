@@ -28,4 +28,19 @@
       background-image: url("./../img/blocks/main-header/backDesktop@2x.jpg");
     }
   }
+
+  &--nojs {
+    padding-top: 325px;
+    background-position-y: 325px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 365px;
+      background-position-y: 365px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+      background-position-y: 0;
+    }
+  }
 }

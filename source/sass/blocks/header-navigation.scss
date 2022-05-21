@@ -233,13 +233,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: transparent;
+    //background-color: transparent;
     width: $desktop-width;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 .header-navigation--nojs .header-navigation__logo {
   height: 69px;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
 }
 
 .header-navigation--nojs .header-navigation__toggle {
