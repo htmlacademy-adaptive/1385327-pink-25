@@ -161,6 +161,7 @@
 .photo__statistic-button {
   border: none;
   padding: 0;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     order: 2;
