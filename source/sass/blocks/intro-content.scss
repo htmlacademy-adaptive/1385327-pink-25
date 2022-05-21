@@ -1,5 +1,14 @@
 .intro-content {
   background-color: rgb(29, 38, 49);
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.intro-content__wrapper {
+  width: 280px;
+  margin: 0 auto;
   color: rgb(255, 255, 255);
   height: 271px;
   display: flex;

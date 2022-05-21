@@ -4,7 +4,8 @@
   font-weight: 300;
   color: rgb(252, 252, 252);
   text-align: center;
-  margin: 0;
+  width: 280px;// nov
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
