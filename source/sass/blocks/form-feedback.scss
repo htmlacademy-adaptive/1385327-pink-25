@@ -91,7 +91,6 @@
   }
 }
 
-
 .form-feedback__fieldset--emotions {
   border: none;
 }
@@ -126,7 +125,6 @@
 .form-feedback__label {
   display: block;
   font-size: 14px;
-  //line-height: 30px;
   color: $item-accent;
   text-transform: uppercase;
   cursor: pointer;
@@ -162,21 +160,6 @@
   }
 }
 
-// input[type="text"] {
-//   border: 2px solid rgb(229, 229, 229);
-//   outline: none;
-//   width: 100%;
-//   padding-left: 20px;
-// }
-
-// input[type="text"]:hover {
-//   border-color: $main-theme;
-// }
-
-// input[type="text"]:focus {
-//   border-color: $item-accent;
-// }
-
 .form-feedback__achivments {/*-------------------------------------------------------------------------*/
   background-color: $background;
 
@@ -209,7 +192,6 @@
   }
 }
 
-
 .form-feedback__legend {
   font-size: 14px;
   line-height: 18px;
@@ -223,8 +205,6 @@
 }
 
 .form-feedback__achivments-item {
-  //padding-top: 13px;
-  //padding-bottom: 20px;
   height: 82px;
 
   @media (min-width: $tablet-width) {
@@ -266,7 +246,6 @@
   color: $main-theme;
   position: relative;
   cursor: pointer;
-  //line-height: 50px;
   padding: 0 0 0 60px;
 }
 
@@ -384,11 +363,28 @@ input[type="checkbox"]:checked + .form-feedback__label-checkbox::after {
 
 .form-feedback__input--contacts {
   height: 63px;
+  border: 2px solid rgb(229, 229, 229);
+  outline: none;
+  width: 100%;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     order: 1;
     margin-top: 25px;
     margin-left: 58px;
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 375px;
+  }
+
+  &:hover {
+    border-color: $main-theme;
+  }
+
+  &:focus {
+    border-color: $item-accent;
   }
 }
 
@@ -421,51 +417,51 @@ input[type="checkbox"]:checked + .form-feedback__label-checkbox::after {
   }
 }
 
-input[type="tel"] {
-  border: 2px solid rgb(229, 229, 229);
-  outline: none;
-  width: 100%;
-  padding-left: 20px;
+// input[type="tel"] {
+//   border: 2px solid rgb(229, 229, 229);
+//   outline: none;
+//   width: 100%;
+//   padding-left: 20px;
 
-  @media (min-width: $tablet-width) {
-    width: 500px;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 500px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 375px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 375px;
+//   }
+// }
 
-input[type="tel"]:hover {
-  border-color: $main-theme;
-}
+// input[type="tel"]:hover {
+//   border-color: $main-theme;
+// }
 
-input[type="tel"]:focus {
-  border-color: $item-accent;
-}
+// input[type="tel"]:focus {
+//   border-color: $item-accent;
+// }
 
-input[type="email"] {
-  border: 2px solid rgb(229, 229, 229);
-  outline: none;
-  width: 100%;
-  padding-left: 20px;
+// input[type="email"] {
+//   border: 2px solid rgb(229, 229, 229);
+//   outline: none;
+//   width: 100%;
+//   padding-left: 20px;
 
-  @media (min-width: $tablet-width) {
-    width: 500px;
-  }
+//   @media (min-width: $tablet-width) {
+//     width: 500px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    width: 375px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 375px;
+//   }
+// }
 
-input[type="email"]:hover {
-  border-color: $main-theme;
-}
+// input[type="email"]:hover {
+//   border-color: $main-theme;
+// }
 
-input[type="email"]:focus {
-  border-color: $item-accent;
-}
+// input[type="email"]:focus {
+//   border-color: $item-accent;
+// }
 
 .form-feedback__platform {/*-----------------------------------*/
   background-color: $background;
