@@ -147,6 +147,7 @@
   letter-spacing: 0.5px;
   color: $main-theme;
   min-height: 63px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 input[type="text"] {
@@ -567,7 +568,6 @@ input[type="radio"]:checked + .form-feedback__label-radio::after {
   padding-top: 10px;
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: -0.4px;
 
   @media (min-width: $tablet-width) {
     margin: 17px 60px;
