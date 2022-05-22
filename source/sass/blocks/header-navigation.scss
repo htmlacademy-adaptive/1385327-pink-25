@@ -241,6 +241,10 @@
 
 .header-navigation--nojs {
   background-color: rgb(40, 54, 69);
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .header-navigation--nojs .header-navigation__bases {
@@ -251,8 +255,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: auto;
+    background-color: transparent;
   }
 }
 

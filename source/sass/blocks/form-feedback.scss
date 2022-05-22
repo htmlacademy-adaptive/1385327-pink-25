@@ -16,7 +16,7 @@
   }
 }
 
-.form-feedback__name {/*-----------------------------------*/
+.form-feedback__name {
   @media (min-width: $tablet-width) {
     order: 1;
   }
@@ -104,7 +104,7 @@
   border: none;
 }
 
-.form-feedback__list {/*-----------------------------------*/
+.form-feedback__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -151,7 +151,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  letter-spacing: 0.5px;
   color: $main-theme;
   min-height: 63px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -169,7 +168,7 @@
   }
 }
 
-.form-feedback__achivments {/*-------------------------------------------------------------------------*/
+.form-feedback__achivments {
   background-color: $background;
 
   @media (min-width: $tablet-width) {
@@ -250,8 +249,6 @@
   }
 }
 
-// .form-feedback__checkbox {}
-
 .form-feedback__label-checkbox {
   font-size: 18px;
   line-height: 80px;
@@ -292,7 +289,7 @@
   transform: rotate(-45deg);
 }
 
-.form-feedback__contacts {/*-----------------------------------*/
+.form-feedback__contacts {
   @media (min-width: $tablet-width) {
     order: 3;
   }
@@ -432,7 +429,7 @@
   }
 }
 
-.form-feedback__platform {/*-----------------------------------*/
+.form-feedback__platform {
   background-color: $background;
 
   @media (min-width: $tablet-width) {
@@ -471,8 +468,6 @@
     padding-left: 75px;
   }
 }
-
-//.form-feedback__radio {}
 
 .form-feedback__radio + .form-feedback__label-radio::before {
   content: "";
@@ -516,7 +511,7 @@
   }
 }
 
-.form-feedback__emotions {/*-----------------------------------*/
+.form-feedback__emotions {
   @media (min-width: $tablet-width) {
     order: 5;
   }
@@ -543,7 +538,6 @@
     padding-bottom: 58px;
   }
 }
-
 
 .form-feedback__textarea {
   border: 2px solid rgb(229, 229, 229);
@@ -578,7 +572,7 @@
   border-color: $item-accent;
 }
 
-.form-feedback__submit {/*-----------------------------------*/
+.form-feedback__submit {
   @media (min-width: $tablet-width) {
     order: 6;
   }

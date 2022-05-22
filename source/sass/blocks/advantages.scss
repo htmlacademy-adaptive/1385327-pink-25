@@ -72,9 +72,9 @@
     background-position: -15px 293px, 35px 0;
     background-size: 300px 197px, 186px 383px;
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("./../img/blocks/advantages/phoneMoodDesktop@2x.png");
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/blocks/advantages/phoneMoodDesktop@2x.png");
+    }
   }
 }
 
@@ -85,9 +85,9 @@
     background-position: 5px 293px, 55px 0;
     background-size: 300px 197px, 186px 382px;
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("./../img/blocks/advantages/phoneWorldDesktop@2x.png");
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/blocks/advantages/phoneWorldDesktop@2x.png");
+    }
   }
 }
 
@@ -98,9 +98,9 @@
   background-position: 50% 165px;
   height: 440px;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("./../img/blocks/advantages/phoneFriendsMobile@2x.png");
-  // }
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../img/blocks/advantages/phoneFriendsMobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -116,9 +116,9 @@
       width: 268px;
       height: 487px;
 
-      // @media (min-resolution: 2dppx) {
-      //   background-image: url("./../img/blocks/advantages/phoneFriendsTablet@2x.png");
-      // }
+      @media (min-resolution: 2dppx) {
+        background-image: url("./../img/blocks/advantages/phoneFriendsTablet@2x.png");
+      }
     }
   }
 
@@ -127,10 +127,9 @@
     background-size: 300px 197px, 186px 382px;
     background-position: 25px 293px, 80px 0;
 
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("./../img/blocks/advantages/phoneFriendsDesktop@2x.png");
-    // }
-
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/blocks/advantages/phoneFriendsDesktop@2x.png");
+    }
 
     &::before {
       content: none;
@@ -158,7 +157,6 @@
     padding-top: 350px;
   }
 }
-
 
 .advantages__item--mood .advantages__title {
   @media (min-width: $desktop-width) {

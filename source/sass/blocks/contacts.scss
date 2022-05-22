@@ -44,10 +44,6 @@
   @media (min-width: $tablet-width) {
     width: 300px;
   }
-
-  @media (min-width: $desktop-width) {
-    //padding: 0;
-  }
 }
 
 .contacts__item--phone {
@@ -115,16 +111,16 @@
 
 .contacts__map {
   position: relative;
-  // background-image: url("./../img/blocks/contacts/mapMobile@1x.jpg");
-  // background-repeat: no-repeat;
+  background-image: url("./../img/blocks/contacts/mapMobile@1x.jpg");
+  background-repeat: no-repeat;
 
-  // @media (min-width: $tablet-width) {
-  //   background-image: url("./../img/blocks/contacts/mapTablet@1x.jpg");
-  // }
+  @media (min-width: $tablet-width) {
+    background-image: url("./../img/blocks/contacts/mapTablet@1x.jpg");
+  }
 
-  // @media (min-width: $desktop-width) {
-  //   background-image: url("./../img/blocks/contacts/mapDesktop@1x.jpg");
-  // }
+  @media (min-width: $desktop-width) {
+    background-image: url("./../img/blocks/contacts/mapDesktop@1x.jpg");
+  }
 }
 
 .contacts__map iframe {

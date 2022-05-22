@@ -171,7 +171,7 @@
   }
 }
 
-.form-photo__filter {//------------------------------------------------------------------
+.form-photo__filter {
   padding: 22px 40px 27px 40px;
   width: 320px;
   margin: 0 auto;
@@ -222,7 +222,7 @@
   }
 }
 
-.form-photo__buttons {//--------------------------------------------------------------------------------
+.form-photo__buttons {
   padding-top: 38px;
   margin: 0 20px;
   grid-area: formBtn;
@@ -293,7 +293,7 @@
     background-color: rgba(40, 54, 69, 0.3);
   }
 }
-/*----------------------------------------------------------------------------*/
+
 .form-photo__input {
   width: 240px;
   // -webkit-appearance: none;
