@@ -29,5 +29,10 @@
     font-size: 50px;
     line-height: 68px;
     padding: 0;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
