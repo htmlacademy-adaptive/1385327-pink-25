@@ -10,13 +10,22 @@
 .page__body {
   min-height: 100%;
   margin: 0 auto;
-  //width: $mobile-width;
+  z-index: -10;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  //background-image: url("../../img/Perfect/MobileMenu.png");
+  //background-image: url("../../img/Perfect/MobileIndex.png");
+  background-image: url("../../img/Perfect/MobileCatalog.png");
 
   @media (min-width: $tablet-width) {
-    //width: $tablet-width;
+    //background-image: url("../../img/Perfect/TebletMenu.png");
+    //background-image: url("../../img/Perfect/TabletIndex.png");
+    background-image: url("../../img/Perfect/TabletCatalog.png");
   }
 
   @media (min-width: $desktop-width) {
-    //width: $desktop-width;
+    //background-image: url("../../img/Perfect/DesktopIndex.png");
+    background-image: url("../../img/Perfect/DesktopCatalog.png");
   }
 }
