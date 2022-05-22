@@ -1,13 +1,17 @@
 .gallery-information {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 42px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
+    width: 660px;
     padding-top: 65px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1200px;
     padding-top: 58px;
     padding-bottom: 65px;
   }
@@ -18,17 +22,8 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
-  // color: $main-theme;
-  // margin: 0;
-  // padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    // line-height: 54px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   font-size: 50px;
-  //   line-height: 68px;
-  // }
 }
