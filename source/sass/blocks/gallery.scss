@@ -1,4 +1,6 @@
 .gallery {
+  width: 320px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
@@ -6,10 +8,12 @@
 
   @media (min-width: $tablet-width) {
     gap: 50px;
+    width: 660px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 48px;
+    width: 1200px;
   }
 }
 

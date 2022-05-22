@@ -6,18 +6,47 @@
   }
 }
 
+.header-navigation--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .header-navigation__wrapper {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: relative;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
     padding-left: 130px;
     padding-right: 130px;
     align-items: center;
+  }
+}
+
+.header-navigation__bases {
+  width: $mobile-width;
+  margin: 0 auto;
+  position: relative;
+  height: 66px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.header-navigation--opened .header-navigation__bases {
+  height: 69px;
+
+  @media (min-width: $tablet-width) {
+    height: 109px;
   }
 }
 
@@ -26,15 +55,10 @@
   position: absolute;
   top: 0;
   z-index: 10;
-  width: $mobile-width;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     background: none;
-    width: $desktop-width;
   }
 }
 
@@ -82,7 +106,6 @@
   height: 24px;
   cursor: pointer;
   border: none;
-  //background-color: transparent;
   background: url("./../img/blocks/header-navigation/btnMenuOpen.svg");
 
   &:hover {
@@ -112,7 +135,6 @@
   height: 23px;
   cursor: pointer;
   border: none;
-  //background-color: transparent;
   background: url("./../img/blocks/header-navigation/btnMenuClose.svg");
 
   &:hover {
@@ -184,7 +206,6 @@
 .header-navigation__link {
   color: rgb(255, 255, 255);
   font-size: 18px;
-  //line-height: 64px;
   line-height: 18px;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -219,27 +240,32 @@
 }
 
 .header-navigation--nojs {
-  padding-top: 66px;
+  background-color: rgb(40, 54, 69);
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
-.header-navigation--nojs .header-navigation__wrapper {
+.header-navigation--nojs .header-navigation__bases {
   background-color: rgb(40, 54, 69);
-  position: absolute;
-  top: 0;
-  width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     background-color: transparent;
-    width: $desktop-width;
   }
 }
 
 .header-navigation--nojs .header-navigation__logo {
   height: 69px;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
 }
 
 .header-navigation--nojs .header-navigation__toggle {

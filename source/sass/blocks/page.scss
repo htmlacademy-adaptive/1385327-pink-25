@@ -10,13 +10,4 @@
 .page__body {
   min-height: 100%;
   margin: 0 auto;
-  width: $mobile-width;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
 }

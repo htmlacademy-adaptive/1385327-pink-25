@@ -1,10 +1,21 @@
 .form-photo {
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
   display: grid;
   grid-template-rows: 374px auto;
 
   @media (min-width: $tablet-width) {
+    width: 660px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     grid-template-columns: 340px auto;
     grid-template-rows: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 60px 195px 60px 210px;
   }
 }
 
@@ -160,7 +171,7 @@
   }
 }
 
-.form-photo__filter {//------------------------------------------------------------------
+.form-photo__filter {
   padding: 22px 40px 27px 40px;
   width: 320px;
   margin: 0 auto;
@@ -211,7 +222,7 @@
   }
 }
 
-.form-photo__buttons {//--------------------------------------------------------------------------------
+.form-photo__buttons {
   padding-top: 38px;
   margin: 0 20px;
   grid-area: formBtn;
@@ -282,8 +293,8 @@
     background-color: rgba(40, 54, 69, 0.3);
   }
 }
-/*----------------------------------------------------------------------------*/
-input[type="range"] {
+
+.form-photo__input {
   width: 240px;
   // -webkit-appearance: none;
   // -moz-appearance: none;
@@ -300,12 +311,12 @@ input[type="range"] {
   }
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+.form-photo__input::-webkit-slider-runnable-track {
   height: 2px;
   background-color: $main-theme;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+.form-photo__input::-webkit-slider-thumb {
   background: rgb(255, 255, 255);
   border: 2px solid $item-accent;
   border-radius: 50%;
@@ -316,20 +327,20 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -7px;
 }
 
-input[type="range"]::-webkit-slider-thumb:active {
+.form-photo__input::-webkit-slider-thumb:active {
   background: $item-accent;
 }
 
-input[type="range"]::-moz-range-track {
+.form-photo__input::-moz-range-track {
   height: 2px;
   background-color: $main-theme;
 }
 
-input[type="range"]::-moz-range-thumb {
+.form-photo__input::-moz-range-thumb {
   border: 2px solid $item-accent;
   border-radius: 50%;
 }
 
-input[type="range"]::-moz-range-thumb:active {
+.form-photo__input::-moz-range-thumb:active {
   background: $item-accent;
 }

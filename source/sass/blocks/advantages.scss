@@ -1,27 +1,14 @@
 .advantages {
   background-color: $background;
-  //opacity: 0.2;
   position: relative;
-  height: 786px;
-
-  @media (min-width: $tablet-width) {
-    height: 487px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 616px;
-  }
 }
 
 .advantages::before {
   content: "";
   position: absolute;
-  background-color: rgb(255, 255, 255);
-  clip-path: polygon(0 100%, 0 0, 100% 0);
+  background: linear-gradient(to top left, transparent 50%, #ffffff 50%);
   height: 32px;
   width: 100%;
-  top: 0;
-  left: 0;
 
   @media (min-width: $tablet-width) {
     height: 53px;
@@ -32,7 +19,21 @@
   }
 }
 
-// .advantages__wrapper {}
+.advantages__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  height: 786px;
+
+  @media (min-width: $tablet-width) {
+    height: 487px;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 616px;
+    width: $desktop-width;
+  }
+}
 
 .advantages__items {
   margin: 0;
@@ -66,26 +67,26 @@
 
 .advantages__item--mood {
   @media (min-width: $desktop-width) {
-    background-image: url("./../img/blocks/advantages/Shadow.png"), url("./../img/blocks/advantages/phoneMoodDesktop@1x.png");
+    background-image: url("./../img/blocks/advantages/shadow@1x.png"), url("./../img/blocks/advantages/phoneMoodDesktop@1x.png");
     background-repeat: no-repeat;
     background-position: -15px 293px, 35px 0;
-    background-size: 300px 197px, 186px 383px;
+    background-size: 300px 197px, 186px 382px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("./../img/blocks/advantages/phoneMoodDesktop@2x.png");
+      background-image: url("./../img/blocks/advantages/shadow@2x.png"), url("./../img/blocks/advantages/phoneMoodDesktop@2x.png");
     }
   }
 }
 
 .advantages__item--world {
   @media (min-width: $desktop-width) {
-    background-image: url("./../img/blocks/advantages/Shadow.png"), url("./../img/blocks/advantages/phoneWorldDesktop@1x.png");
+    background-image: url("./../img/blocks/advantages/shadow@1x.png"), url("./../img/blocks/advantages/phoneWorldDesktop@1x.png");
     background-repeat: no-repeat;
     background-position: 5px 293px, 55px 0;
     background-size: 300px 197px, 186px 382px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("./../img/blocks/advantages/phoneWorldDesktop@2x.png");
+      background-image: url("./../img/blocks/advantages/shadow@2x.png"), url("./../img/blocks/advantages/phoneWorldDesktop@2x.png");
     }
   }
 }
@@ -122,14 +123,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("./../img/blocks/advantages/Shadow.png"), url("./../img/blocks/advantages/phoneFriendsDesktop@2x.png");
+    background-image: url("./../img/blocks/advantages/shadow@1x.png"), url("./../img/blocks/advantages/phoneFriendsDesktop@2x.png");
     background-size: 300px 197px, 186px 382px;
     background-position: 25px 293px, 80px 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("./../img/blocks/advantages/phoneFriendsDesktop@2x.png");
+      background-image: url("./../img/blocks/advantages/shadow@2x.png"), url("./../img/blocks/advantages/phoneFriendsDesktop@2x.png");
     }
-
 
     &::before {
       content: none;
@@ -157,7 +157,6 @@
     padding-top: 350px;
   }
 }
-
 
 .advantages__item--mood .advantages__title {
   @media (min-width: $desktop-width) {

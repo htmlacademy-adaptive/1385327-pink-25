@@ -4,10 +4,13 @@
   justify-content: space-between;
   align-items: center;
   height: 284px;
+  width: 320px;
+  margin: 0 auto;
   padding: 40px 70px;
 
   @media (min-width: $tablet-width) {
     height: 127px;
+    width: 660px;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
@@ -15,6 +18,7 @@
 
   @media (min-width: $desktop-width) {
     height: 197px;
+    width: 1200px;
     padding: 0 130px;
   }
 }

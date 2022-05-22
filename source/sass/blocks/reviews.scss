@@ -1,4 +1,17 @@
 .reviews {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.reviews__wrapper {
   @media (min-width: $desktop-width) {
     background-image: url("../../img/blocks/reviews/reviewsQuotes.svg");
     background-repeat: no-repeat;
@@ -9,8 +22,6 @@
     position: relative;
   }
 }
-
-// .reviews__wpapper{}
 
 .reviews__items {
   margin: 0;

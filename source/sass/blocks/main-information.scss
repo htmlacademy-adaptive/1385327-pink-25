@@ -1,15 +1,19 @@
 .main-information {
   height: 216px;
+  width: $mobile-width;
+  margin: 0 auto;
   padding-top: 41px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     height: auto;
+    width: $tablet-width;
     padding-top: 48px;
     padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     padding-top: 60px;
     padding-bottom: 56px;
   }
