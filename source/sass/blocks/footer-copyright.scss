@@ -28,7 +28,9 @@
   height: 34px;
   color: $item-accent;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: $main-theme;
   }
 

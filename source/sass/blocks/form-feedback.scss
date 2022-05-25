@@ -273,6 +273,10 @@
   border-color: $main-theme;
 }
 
+.form-feedback__checkbox:focus + .form-feedback__label-checkbox::before {
+  border-color: $main-theme;
+}
+
 .form-feedback__checkbox:active + .form-feedback__label-checkbox::before {
   border-color: $item-accent;
 }
@@ -481,6 +485,10 @@
 }
 
 .form-feedback__radio:hover + .form-feedback__label-radio::before {
+  border-color: $main-theme;
+}
+
+.form-feedback__radio:focus + .form-feedback__label-radio::before {
   border-color: $main-theme;
 }
 
