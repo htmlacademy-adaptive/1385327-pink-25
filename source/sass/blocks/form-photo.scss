@@ -91,7 +91,9 @@
   background-color: transparent;
   color: rgba(40, 54, 69, 0.3);
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: rgba(40, 54, 69, 0.5);
   }
 
@@ -99,10 +101,6 @@
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
     width: 80px;
     color: $item-accent;
-
-    &:hover {
-      color: rgba(40, 54, 69, 0.5);
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -269,7 +267,9 @@
 .form-photo__button--submit {
   color: $item-accent;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     background-color: $item-accent;
     color: rgb(255, 255, 255);
   }
@@ -283,7 +283,9 @@
   color: rgba(40, 54, 69, 0.1);
   border-color: rgba(40, 54, 69, 0.1);
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: rgba(40, 54, 69, 0.3);
     border-color: rgba(40, 54, 69, 0.3);
   }

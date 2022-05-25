@@ -28,7 +28,9 @@
   border-radius: 50%;
   color: $item-accent;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     border-color: $main-theme;
   }
 

@@ -1,7 +1,9 @@
 .footer-logo {
   color: $main-theme;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: $item-accent;
   }
 
